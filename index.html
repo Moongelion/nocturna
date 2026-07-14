@@ -1,0 +1,1620 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Nocturna — The Cult of Thought</title>
+    <link
+      rel="stylesheet"
+      href="style.css" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;900&family=Cinzel+Decorative:wght@400;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <!-- ! quitar cursor en en movimiento -->
+  <div class="cursor-dot"  id="cursor-dot"  aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
+
+    <!-- ══ HEADER ══ -->
+    <header
+      class="site-header"
+      id="site-header">
+      <div class="header__inner">
+        <a
+          href="#hero"
+          class="header__logo"
+          aria-label="Nocturna — inicio">
+          <img
+            src="assets/finalogo.png"
+            alt=""
+            class="header__logo-img"
+            aria-hidden="true" />
+          <span class="header__logo-wordmark">Nocturna</span>
+        </a>
+
+        <nav
+          class="header__nav"
+          id="main-nav"
+          aria-label="Navegación principal">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a
+                href="#manifiesto"
+                class="nav__link"
+                >Manifiesto</a
+              >
+            </li>
+            <li class="nav__item nav__item--has-dropdown">
+              <button
+                class="nav__link nav__link--btn"
+                aria-haspopup="true"
+                aria-expanded="false"
+                id="archivos-btn">
+                Archivos
+                <svg
+                  class="nav__chevron"
+                  viewBox="0 0 12 7"
+                  fill="none"
+                  aria-hidden="true">
+                  <path
+                    d="M1 1L6 6L11 1"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+              <ul
+                class="nav__dropdown"
+                role="menu"
+                aria-labelledby="archivos-btn">
+                <li role="none">
+                  <a
+                    href="#galeria"
+                    class="nav__dropdown-link"
+                    role="menuitem"
+                    >✦ La Galería</a
+                  >
+                </li>
+                <li role="none">
+                  <a
+                    href="#musica"
+                    class="nav__dropdown-link"
+                    role="menuitem"
+                    >✦ La Música</a
+                  >
+                </li>
+                <li role="none">
+                  <a
+                    href="#biblioteca"
+                    class="nav__dropdown-link"
+                    role="menuitem"
+                    >✦ La Biblioteca</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item">
+              <a
+                href="#camara"
+                class="nav__link"
+                >La Cámara</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__cta">
+          <a
+            href="#newsletter"
+            class="btn btn--ghost-gold btn--sm"
+            >Suscripción al Códice</a
+          >
+        </div>
+
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="main-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <!-- ══ HERO ══ -->
+      <section
+        class="hero"
+        id="hero"
+        aria-label="Portada">
+        <div
+          class="hero__media"
+          aria-hidden="true">
+          <img
+            src="assets/principal.png"
+            alt=""
+            class="hero__media-img" />
+          <div class="hero__media-vignette"></div>
+          <div
+            class="hero__grain"
+            aria-hidden="true"></div>
+        </div>
+        <div
+          class="hero__particles"
+          aria-hidden="true">
+          <span class="particle p1">✦</span>
+          <span class="particle p2">✧</span>
+          <span class="particle p3">✦</span>
+          <span class="particle p4">✧</span>
+          <span class="particle p5">✦</span>
+        </div>
+        <div class="hero__content">
+          <div class="hero__badge">
+            <span class="hero__badge-line"></span>
+            <span class="hero__badge-text">Est. Anno Domini MMXXV</span>
+            <span class="hero__badge-line"></span>
+          </div>
+          <h1 class="hero__title">Nocturna</h1>
+          <p class="hero__tagline">The Cult of Thought</p>
+          <div
+            class="hero__rule"
+            aria-hidden="true">
+            <span></span><em>◆</em><span></span>
+          </div>
+          <p class="hero__desc">
+            Un santuario para los que buscan más allá del velo.<br />
+            Arte, filosofía, música y los grandes misterios del conocimiento
+            humano.
+          </p>
+          <div class="hero__actions">
+            <a
+              href="#manifiesto"
+              class="btn btn--primary btn--lg"
+              >Leer el Manifiesto</a
+            >
+            <a
+              href="#archivos"
+              class="btn btn--outline-dim btn--lg"
+              >Explorar Archivos</a
+            >
+          </div>
+        </div>
+        <div
+          class="hero__scroll"
+          aria-hidden="true">
+          <div class="hero__scroll-line"></div>
+          <span>Descender</span>
+        </div>
+      </section>
+
+      <!-- ══ MANIFIESTO ══ -->
+      <section
+        class="manifiesto"
+        id="manifiesto">
+        <div
+          class="section-bg"
+          aria-hidden="true">
+          <img
+            src="assets/SEGUNDO.png"
+            alt="" />
+          <div class="section-bg__mask section-bg__mask--manifiesto"></div>
+        </div>
+        <div class="container">
+          <div class="manifiesto__grid">
+            <aside
+              class="manifiesto__aside"
+              aria-hidden="true">
+              <p class="aside-label">I · Manifiesto</p>
+              <div class="aside-line"></div>
+            </aside>
+            <div class="manifiesto__body">
+              <header class="section-header">
+                <p class="eyebrow">I. El Origen</p>
+                <h2>Contra el Ruido.<br />Por el Pensamiento.</h2>
+              </header>
+              <blockquote class="pull-quote">
+                Vivimos en una era de destellos efímeros. La cultura ha sido
+                reducida a fragmentos de tres segundos, algoritmos de consenso y
+                la dictadura del agrado fácil.
+              </blockquote>
+              <p class="body-text">
+                Nocturna nació como acto de resistencia. Creemos que la belleza
+                requiere tiempo, que la música merece ser escuchada en silencio
+                y que los grandes libros aún tienen el poder de transformar
+                almas.
+              </p>
+              <p class="body-text">
+                Aquí reunimos lo que el mundo moderno quiere hacer olvidar: la
+                pintura que perturba, la filosofía que incomoda, la música que
+                no necesita cuatro acordes para conmover.
+              </p>
+              <a
+                href="#"
+                class="btn btn--primary btn--arrow">
+                Leer el Manifiesto Completo
+                <svg
+                  class="btn__arrow-svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true">
+                  <path
+                    d="M5 12h14M13 6l6 6-6 6"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+            <div class="manifiesto__stats">
+              <div class="stat-card">
+                <span class="stat-card__n">XII</span>
+                <span class="stat-card__rule"></span>
+                <span class="stat-card__l">Principios del Códice</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-card__n">∞</span>
+                <span class="stat-card__rule"></span>
+                <span class="stat-card__l">Obras Analizadas</span>
+              </div>
+              <div class="stat-card stat-card--accent">
+                <span class="stat-card__n">I</span>
+                <span class="stat-card__rule"></span>
+                <span class="stat-card__l">Culto. El Pensamiento.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══ ARCHIVOS — TRES CÁMARAS ══ -->
+      <section
+        class="archivos"
+        id="archivos">
+        <div
+          class="section-bg"
+          aria-hidden="true">
+          <img
+            src="assets/TERCE.png"
+            alt="" />
+          <div class="section-bg__mask section-bg__mask--archivos"></div>
+        </div>
+        <div class="container">
+          <header class="section-header section-header--center">
+            <p class="eyebrow">II. Los Archivos</p>
+            <h2>Las Tres Cámaras<br />del Conocimiento</h2>
+            <p class="section-sub">
+              Explora las salas donde guardamos lo que el tiempo no debe borrar.
+            </p>
+          </header>
+          <div class="container__tabs">
+            <ul class="tabs">
+              <li class="tab active">La Galería</li>
+              <li class="tab">La Música</li>
+              <li class="tab">La Biblioteca</li>
+            </ul>
+          </div>
+          <div class="chambers--panels">
+            <ul class="chambers chamber--panel active">
+              <li>
+                <a
+                  href="#galeria"
+                  class="chamber">
+                  <div class="chamber__img-wrap">
+                    <img
+                      src="assets/GALLERY.jpg"
+                      alt="La Galería"
+                      loading="lazy" />
+                    <div class="chamber__img-overlay"></div>
+                  </div>
+                  <div class="chamber__body">
+                    <span
+                      class="chamber__icon"
+                      aria-hidden="true"
+                      >🖼</span
+                    >
+                    <h3>La Galería</h3>
+                    <p>
+                      Obras maestras comentadas. De los prerrafaelitas al
+                      simbolismo más oscuro.
+                    </p>
+                    <span class="chamber__cta">Entrar a la sala →</span>
+                  </div>
+                  <div
+                    class="chamber__corners"
+                    aria-hidden="true"></div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#musica"
+                  class="chamber">
+                  <div class="chamber__img-wrap">
+                    <img
+                      src="assets/cena.jpg"
+                      alt="La Música"
+                      loading="lazy" />
+                    <div class="chamber__img-overlay"></div>
+                  </div>
+                  <div class="chamber__body">
+                    <span
+                      class="chamber__icon"
+                      aria-hidden="true"
+                      >♩</span
+                    >
+                    <h3>La Música</h3>
+                    <p>
+                      Desde Bach hasta el doom metal. La música como portal a lo
+                      inefable.
+                    </p>
+                    <span class="chamber__cta">Entrar a la sala →</span>
+                  </div>
+                  <div
+                    class="chamber__corners"
+                    aria-hidden="true"></div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#biblioteca"
+                  class="chamber">
+                  <div class="chamber__img-wrap">
+                    <img
+                      src="assets/GALLERY.jpg"
+                      alt="La Biblioteca"
+                      loading="lazy" />
+                    <div class="chamber__img-overlay"></div>
+                  </div>
+                  <div class="chamber__body">
+                    <span
+                      class="chamber__icon chamber__icon--img"
+                      aria-hidden="true">
+                      <img
+                        src="assets/hd-open-book-white-icon-symbol-transparent-background-701751695033476xelmcdrhf9.png"
+                        alt="" />
+                    </span>
+                    <h3>La Biblioteca</h3>
+                    <p>
+                      Filosofía, ocultismo, literatura maldita. Los libros que
+                      transforman mentes.
+                    </p>
+                    <span class="chamber__cta">Entrar a la sala →</span>
+                  </div>
+                  <div
+                    class="chamber__corners"
+                    aria-hidden="true"></div>
+                </a>
+              </li>
+            </ul>
+            <ul class="chambers chamber--panel">
+              <li>
+                <a
+                  href="#galeria"
+                  class="chamber">
+                  <div class="chamber__img-wrap">
+                    <img
+                      src="assets/GALLERY.jpg"
+                      alt="La Galería"
+                      loading="lazy" />
+                    <div class="chamber__img-overlay"></div>
+                  </div>
+                  <div class="chamber__body">
+                    <span
+                      class="chamber__icon"
+                      aria-hidden="true"
+                      >🖼</span
+                    >
+                    <h3>La Galería</h3>
+                    <p>
+                      Obras maestras comentadas. De los prerrafaelitas al
+                      simbolismo más oscuro.
+                    </p>
+                    <span class="chamber__cta">Entrar a la sala →</span>
+                  </div>
+                  <div
+                    class="chamber__corners"
+                    aria-hidden="true"></div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#musica"
+                  class="chamber">
+                  <div class="chamber__img-wrap">
+                    <img
+                      src="assets/MUSIC.jpg"
+                      alt="La Música"
+                      loading="lazy" />
+                    <div class="chamber__img-overlay"></div>
+                  </div>
+                  <div class="chamber__body">
+                    <span
+                      class="chamber__icon"
+                      aria-hidden="true"
+                      >♩</span
+                    >
+                    <h3>La Música</h3>
+                    <p>
+                      Desde Bach hasta el doom metal. La música como portal a lo
+                      inefable.
+                    </p>
+                    <span class="chamber__cta">Entrar a la sala →</span>
+                  </div>
+                  <div
+                    class="chamber__corners"
+                    aria-hidden="true"></div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#biblioteca"
+                  class="chamber">
+                  <div class="chamber__img-wrap">
+                    <img
+                      src="assets/LIBRARY.jpg"
+                      alt="La Biblioteca"
+                      loading="lazy" />
+                    <div class="chamber__img-overlay"></div>
+                  </div>
+                  <div class="chamber__body">
+                    <span
+                      class="chamber__icon chamber__icon--img"
+                      aria-hidden="true">
+                      <img
+                        src="assets/hd-open-book-white-icon-symbol-transparent-background-701751695033476xelmcdrhf9.png"
+                        alt="" />
+                    </span>
+                    <h3>La Biblioteca</h3>
+                    <p>
+                      Filosofía, ocultismo, literatura maldita. Los libros que
+                      transforman mentes.
+                    </p>
+                    <span class="chamber__cta">Entrar a la sala →</span>
+                  </div>
+                  <div
+                    class="chamber__corners"
+                    aria-hidden="true"></div>
+                </a>
+              </li>
+            </ul>
+            <ul class="chambers chamber--panel">
+              <li>
+                <a
+                  href="#galeria"
+                  class="chamber">
+                  <div class="chamber__img-wrap">
+                    <img
+                      src="assets/GALLERY.jpg"
+                      alt="La Galería"
+                      loading="lazy" />
+                    <div class="chamber__img-overlay"></div>
+                  </div>
+                  <div class="chamber__body">
+                    <span
+                      class="chamber__icon"
+                      aria-hidden="true"
+                      >🖼</span
+                    >
+                    <h3>La Galería</h3>
+                    <p>
+                      Obras maestras comentadas. De los prerrafaelitas al
+                      simbolismo más oscuro.
+                    </p>
+                    <span class="chamber__cta">Entrar a la sala →</span>
+                  </div>
+                  <div
+                    class="chamber__corners"
+                    aria-hidden="true"></div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#musica"
+                  class="chamber">
+                  <div class="chamber__img-wrap">
+                    <img
+                      src="assets/MUSIC.jpg"
+                      alt="La Música"
+                      loading="lazy" />
+                    <div class="chamber__img-overlay"></div>
+                  </div>
+                  <div class="chamber__body">
+                    <span
+                      class="chamber__icon"
+                      aria-hidden="true"
+                      >♩</span
+                    >
+                    <h3>La Música</h3>
+                    <p>
+                      Desde Bach hasta el doom metal. La música como portal a lo
+                      inefable.
+                    </p>
+                    <span class="chamber__cta">Entrar a la sala →</span>
+                  </div>
+                  <div
+                    class="chamber__corners"
+                    aria-hidden="true"></div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#biblioteca"
+                  class="chamber">
+                  <div class="chamber__img-wrap">
+                    <img
+                      src="assets/LIBRARY.jpg"
+                      alt="La Biblioteca"
+                      loading="lazy" />
+                    <div class="chamber__img-overlay"></div>
+                  </div>
+                  <div class="chamber__body">
+                    <span
+                      class="chamber__icon chamber__icon--img"
+                      aria-hidden="true">
+                      <img
+                        src="assets/hd-open-book-white-icon-symbol-transparent-background-701751695033476xelmcdrhf9.png"
+                        alt="" />
+                    </span>
+                    <h3>La Biblioteca</h3>
+                    <p>
+                      Filosofía, ocultismo, literatura maldita. Los libros que
+                      transforman mentes.
+                    </p>
+                    <span class="chamber__cta">Entrar a la sala →</span>
+                  </div>
+                  <div
+                    class="chamber__corners"
+                    aria-hidden="true"></div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══ LA GALERÍA ══ -->
+      <section
+        class="galeria"
+        id="galeria">
+        <div
+          class="section-bg"
+          aria-hidden="true">
+          <img
+            src="assets/quinta.png"
+            alt="" />
+          <div class="section-bg__mask section-bg__mask--galeria"></div>
+        </div>
+        <div class="container">
+          <div class="section-header-row">
+            <header class="section-header">
+              <p class="eyebrow">La Galería Nocturna</p>
+              <h2>Arte que Perturba</h2>
+            </header>
+            <a
+              href="#"
+              class="btn btn--ghost-gold"
+              >Ver toda la Galería</a
+            >
+          </div>
+
+          <!-- Pared de cuadros -->
+          <div class="gallery-wall-wrap">
+            <img
+              src="assets/GALLERY.png"
+              alt="La Pared de Cuadros — Colección Permanente Nocturna. Pinturas con marcos dorados barrocos."
+              class="gallery-wall"
+              loading="lazy" />
+            <div class="gallery-wall-caption">
+              La Colección Permanente — Temporada 2026
+            </div>
+          </div>
+
+          <!-- Obra destacada -->
+          <div class="featured-artwork">
+            <div class="featured-artwork__frame-wrap">
+              <div class="featured-artwork__frame">
+                <img
+                  src="assets/klimt.png"
+                  alt="Gustav Klimt — El Beso, 1907–08"
+                  loading="lazy" />
+              </div>
+              <p class="featured-artwork__plaque">
+                <span>01</span> Klimt — El Beso · 1907–08 · Óleo y pan de oro
+              </p>
+            </div>
+            <div class="featured-artwork__content">
+              <p class="eyebrow">Obra de la semana</p>
+              <h3>Gustav Klimt — El Beso</h3>
+              <div class="featured-artwork__tags">
+                <span class="tag">Simbolismo</span>
+                <span class="tag">Art Nouveau</span>
+                <span class="tag">Viena, 1908</span>
+              </div>
+              <p class="body-text">
+                Klimt disuelve los cuerpos en una cascada de oro y flores. No
+                hay distinción entre la figura y el ornamento: el deseo se
+                vuelve arquitectura, el amor se convierte en geometría sagrada.
+              </p>
+              <p class="body-text">
+                Dos patrones textiles distintos —cuadros angulares para él,
+                círculos florales para ella— narran la diferencia que hace
+                posible la unión.
+              </p>
+              <a
+                href="#"
+                class="btn btn--primary btn--arrow">
+                Análisis completo
+                <svg
+                  class="btn__arrow-svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true">
+                  <path
+                    d="M5 12h14M13 6l6 6-6 6"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Grid obras -->
+          <div class="art-grid">
+            <article
+              class="art-card"
+              tabindex="0">
+              <div class="art-card__img">
+                <img
+                  src="assets/ophelia.jpg"
+                  alt="Millais — Ophelia, 1851"
+                  loading="lazy" />
+              </div>
+              <div class="art-card__info">
+                <span class="tag">Prerrafaelita</span>
+                <h4>Millais — Ophelia</h4>
+                <time>1851–52</time>
+              </div>
+            </article>
+            <article
+              class="art-card"
+              tabindex="0">
+              <div class="art-card__img">
+                <img
+                  src="assets/cena.jpg"
+                  alt="Da Vinci — La Última Cena, c.1498"
+                  loading="lazy" />
+              </div>
+              <div class="art-card__info">
+                <span class="tag">Renacimiento</span>
+                <h4>Da Vinci — La Última Cena</h4>
+                <time>c. 1498</time>
+              </div>
+            </article>
+            <article
+              class="art-card"
+              tabindex="0">
+              <div class="art-card__img">
+                <img
+                  src="assets/sakd.jpg"
+                  alt="El Umbral Invisible"
+                  loading="lazy" />
+              </div>
+              <div class="art-card__info">
+                <span class="tag">Oscuro Romántico</span>
+                <h4>El Umbral Invisible</h4>
+                <time>2024</time>
+              </div>
+            </article>
+            <article
+              class="art-card"
+              tabindex="0">
+              <div class="art-card__img">
+                <img
+                  src="assets/septimo.jpg"
+                  alt="Estudio en Negro"
+                  loading="lazy" />
+              </div>
+              <div class="art-card__info">
+                <span class="tag">Contemporáneo</span>
+                <h4>Estudio en Negro</h4>
+                <time>2025</time>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══ LA MÚSICA ══ -->
+      <section
+        class="musica"
+        id="musica">
+        <div
+          class="section-bg"
+          aria-hidden="true">
+          <img
+            src="assets/sexta.png"
+            alt="" />
+          <div class="section-bg__mask section-bg__mask--musica"></div>
+        </div>
+        <div class="container">
+          <div class="musica__layout">
+            <div class="musica__player-col">
+              <div
+                class="vinyl"
+                id="vinyl">
+                <div class="vinyl__disc">
+                  <div class="vinyl__label">
+                    <img
+                      src="assets/finalogo.png"
+                      alt="Nocturna Records" />
+                  </div>
+                </div>
+                <div
+                  class="vinyl__arm"
+                  aria-hidden="true">
+                  <div class="vinyl__arm-head"></div>
+                </div>
+              </div>
+              <div class="player-widget">
+                <p class="player-widget__label">En reproducción</p>
+                <p
+                  class="player-widget__track"
+                  id="pw-track">
+                  Nocturno Op. 9 No. 2
+                </p>
+                <p
+                  class="player-widget__artist"
+                  id="pw-artist">
+                  Frédéric Chopin
+                </p>
+                <div class="player-widget__bar">
+                  <div
+                    class="player-widget__fill"
+                    id="pw-fill"></div>
+                </div>
+                <div class="player-widget__controls">
+                  <button
+                    class="pw-btn"
+                    id="pw-prev"
+                    aria-label="Anterior">
+                    &#8249;&#8249;
+                  </button>
+                  <button
+                    class="pw-btn pw-btn--play"
+                    id="pw-play"
+                    aria-label="Reproducir">
+                    <span class="pw-play-icon">&#9654;</span>
+                    <span
+                      class="pw-pause-icon"
+                      hidden
+                      >&#9646;&#9646;</span
+                    >
+                  </button>
+                  <button
+                    class="pw-btn"
+                    id="pw-next"
+                    aria-label="Siguiente">
+                    &#8250;&#8250;
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="musica__content-col">
+              <header class="section-header">
+                <p class="eyebrow">La Cámara de la Música</p>
+                <h2>Sonidos del Abismo</h2>
+              </header>
+              <p class="body-text musica__intro">
+                La música de Nocturna no es entretenimiento. Es ceremonial.
+                Desde los nocturnos de Chopin hasta el ambient más oscuro,
+                seleccionamos obras que abren puertas en la mente.
+              </p>
+              <ol
+                class="tracklist"
+                id="tracklist"
+                aria-label="Lista de reproducción">
+                <li
+                  class="tracklist__item tracklist__item--active"
+                  data-idx="0"
+                  tabindex="0"
+                  role="button"
+                  aria-pressed="true">
+                  <span class="tracklist__num">01</span>
+                  <div class="tracklist__info">
+                    <span class="tracklist__title">Nocturno Op. 9 No. 2</span>
+                    <span class="tracklist__artist">Frédéric Chopin</span>
+                  </div>
+                  <span class="tracklist__genre">Piano Romántico</span>
+                  <span class="tracklist__dur">4:32</span>
+                </li>
+                <li
+                  class="tracklist__item"
+                  data-idx="1"
+                  tabindex="0"
+                  role="button"
+                  aria-pressed="false">
+                  <span class="tracklist__num">02</span>
+                  <div class="tracklist__info">
+                    <span class="tracklist__title">Lacrimosa</span>
+                    <span class="tracklist__artist"
+                      >W.A. Mozart — Requiem K.626</span
+                    >
+                  </div>
+                  <span class="tracklist__genre">Sacro</span>
+                  <span class="tracklist__dur">2:46</span>
+                </li>
+                <li
+                  class="tracklist__item"
+                  data-idx="2"
+                  tabindex="0"
+                  role="button"
+                  aria-pressed="false">
+                  <span class="tracklist__num">03</span>
+                  <div class="tracklist__info">
+                    <span class="tracklist__title">Danse Macabre</span>
+                    <span class="tracklist__artist">Camille Saint-Saëns</span>
+                  </div>
+                  <span class="tracklist__genre">Orquesta</span>
+                  <span class="tracklist__dur">7:18</span>
+                </li>
+                <li
+                  class="tracklist__item"
+                  data-idx="3"
+                  tabindex="0"
+                  role="button"
+                  aria-pressed="false">
+                  <span class="tracklist__num">04</span>
+                  <div class="tracklist__info">
+                    <span class="tracklist__title"
+                      >In the Hall of the Mountain King</span
+                    >
+                    <span class="tracklist__artist">Edvard Grieg</span>
+                  </div>
+                  <span class="tracklist__genre">Programa</span>
+                  <span class="tracklist__dur">2:29</span>
+                </li>
+                <li
+                  class="tracklist__item"
+                  data-idx="4"
+                  tabindex="0"
+                  role="button"
+                  aria-pressed="false">
+                  <span class="tracklist__num">05</span>
+                  <div class="tracklist__info">
+                    <span class="tracklist__title"
+                      >Moonlight Sonata Op. 27</span
+                    >
+                    <span class="tracklist__artist">Ludwig van Beethoven</span>
+                  </div>
+                  <span class="tracklist__genre">Sonata</span>
+                  <span class="tracklist__dur">5:48</span>
+                </li>
+              </ol>
+              <a
+                href="#"
+                class="btn btn--primary btn--arrow">
+                Explorar toda la Música
+                <svg
+                  class="btn__arrow-svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true">
+                  <path
+                    d="M5 12h14M13 6l6 6-6 6"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══ LA BIBLIOTECA ══ -->
+      <section
+        class="biblioteca"
+        id="biblioteca">
+        <div class="container">
+          <div class="section-header-row">
+            <header class="section-header">
+              <p class="eyebrow">La Biblioteca Nocturna</p>
+              <h2>Libros que No Se Olvidan</h2>
+            </header>
+            <a
+              href="#"
+              class="btn btn--ghost-gold"
+              >Ver toda la Biblioteca</a
+            >
+          </div>
+          <div class="bookshelf">
+            <article
+              class="book"
+              tabindex="0">
+              <div
+                class="book__3d"
+                style="--bk: #3d1a0e">
+                <div class="book__spine-face">
+                  <span>El Nombre de la Rosa</span><span>Eco</span>
+                </div>
+                <div class="book__front-face">
+                  <img
+                    src="assets/septimo.jpg"
+                    alt=""
+                    class="book__cover-img" />
+                  <div class="book__cover-text">
+                    <p>El Nombre de la Rosa</p>
+                    <p>Umberto Eco</p>
+                  </div>
+                </div>
+                <div class="book__side-face"></div>
+              </div>
+              <div class="book__meta">
+                <h3>El Nombre de la Rosa</h3>
+                <p class="book__author">Umberto Eco · 1980</p>
+                <p class="body-text">
+                  Misterio, herejía y la biblioteca como laberinto del saber
+                  oculto.
+                </p>
+                <div class="book__tags">
+                  <span class="tag">Ficción</span
+                  ><span class="tag">Semiótica</span>
+                </div>
+              </div>
+            </article>
+            <article
+              class="book"
+              tabindex="0">
+              <div
+                class="book__3d"
+                style="--bk: #1a0a2e">
+                <div class="book__spine-face">
+                  <span>Así Habló Zaratustra</span><span>Nietzsche</span>
+                </div>
+                <div class="book__front-face">
+                  <div class="book__cover-glyph">F.N.</div>
+                  <div class="book__cover-text">
+                    <p>Así habló Zaratustra</p>
+                    <p>F. Nietzsche</p>
+                  </div>
+                </div>
+                <div class="book__side-face"></div>
+              </div>
+              <div class="book__meta">
+                <h3>Así habló Zaratustra</h3>
+                <p class="book__author">Friedrich Nietzsche · 1883</p>
+                <p class="body-text">
+                  La voluntad de poder y la búsqueda del superhombre a través
+                  del abismo.
+                </p>
+                <div class="book__tags">
+                  <span class="tag">Filosofía</span
+                  ><span class="tag">Existencial</span>
+                </div>
+              </div>
+            </article>
+            <article
+              class="book"
+              tabindex="0">
+              <div
+                class="book__3d"
+                style="--bk: #0a1a0e">
+                <div class="book__spine-face">
+                  <span>Paraíso Perdido</span><span>Milton</span>
+                </div>
+                <div class="book__front-face">
+                  <div class="book__cover-glyph">P.L.</div>
+                  <div class="book__cover-text">
+                    <p>Paraíso Perdido</p>
+                    <p>John Milton</p>
+                  </div>
+                </div>
+                <div class="book__side-face"></div>
+              </div>
+              <div class="book__meta">
+                <h3>Paraíso Perdido</h3>
+                <p class="book__author">John Milton · 1667</p>
+                <p class="body-text">
+                  La caída más bella de la literatura. Lucifer como el rebelde
+                  eterno.
+                </p>
+                <div class="book__tags">
+                  <span class="tag">Épica</span
+                  ><span class="tag">Teología</span>
+                </div>
+              </div>
+            </article>
+            <article
+              class="book"
+              tabindex="0">
+              <div
+                class="book__3d"
+                style="--bk: #1a1200">
+                <div class="book__spine-face">
+                  <span>El Libro de los Muertos</span><span>Anónimo</span>
+                </div>
+                <div class="book__front-face">
+                  <div class="book__cover-glyph">☥</div>
+                  <div class="book__cover-text">
+                    <p>El Libro de los Muertos</p>
+                    <p>Antiguo Egipto</p>
+                  </div>
+                </div>
+                <div class="book__side-face"></div>
+              </div>
+              <div class="book__meta">
+                <h3>El Libro de los Muertos</h3>
+                <p class="book__author">Anónimo · c. 1550 a.C.</p>
+                <p class="body-text">
+                  Manual de navegación para el alma en el más allá. El primer
+                  gran texto esotérico.
+                </p>
+                <div class="book__tags">
+                  <span class="tag">Ocultismo</span
+                  ><span class="tag">Ritual</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══ LA CÁMARA — ENSAYO DESTACADO ══ -->
+      <section
+        class="camara"
+        id="camara">
+        <div
+          class="section-bg"
+          aria-hidden="true">
+          <img
+            src="assets/sexta.png"
+            alt="" />
+          <div class="section-bg__mask section-bg__mask--camara"></div>
+        </div>
+        <div class="container">
+          <header class="section-header section-header--center">
+            <p class="eyebrow">III. La Cámara</p>
+            <h2>El Ensayo de la Semana</h2>
+          </header>
+          <article class="camara__essay">
+            <div class="camara__essay-media">
+              <img
+                src="assets/principal.png"
+                alt="Libro de alquimia — Great Chain of Being"
+                loading="lazy" />
+              <div
+                class="camara__ribbon"
+                aria-hidden="true">
+                <img
+                  src="assets/purple-ribbon-graphic-element-on-transparent-rectangle-label-png.png"
+                  alt="" />
+                <span>Nuevo</span>
+              </div>
+            </div>
+            <div class="camara__essay-body">
+              <p class="eyebrow">Filosofía · Esotérico</p>
+              <h3>
+                La Gran Cadena del Ser:<br />Jerarquía, Cosmos y el Lugar del
+                Hombre
+              </h3>
+              <p class="camara__essay-meta">
+                <span>Por Nocturna Editorial</span
+                ><span aria-hidden="true"> · </span>
+                <time datetime="2026-04-07">7 de abril, 2026</time
+                ><span aria-hidden="true"> · </span>
+                <span>12 min de lectura</span>
+              </p>
+              <p class="body-text">
+                Desde Platón hasta Leibniz, la idea de que el universo forma una
+                escalera perfecta de seres —desde la materia inerte hasta Dios—
+                ha moldeado el pensamiento occidental durante dos milenios. El
+                libro de alquimia representa visualmente lo que la filosofía
+                apenas puede articular con palabras.
+              </p>
+              <a
+                href="#"
+                class="btn btn--primary btn--arrow">
+                Leer el ensayo completo
+                <svg
+                  class="btn__arrow-svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true">
+                  <path
+                    d="M5 12h14M13 6l6 6-6 6"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ══ PREGUNTAS DEL ABISMO — ACORDEÓN ══ -->
+      <section
+        class="faq"
+        id="faq">
+        <div
+          class="section-bg"
+          aria-hidden="true">
+          <img
+            src="assets/SEGUNDO.png"
+            alt="" />
+          <div class="section-bg__mask section-bg__mask--manifiesto"></div>
+        </div>
+        <div class="container">
+          <div class="faq__layout">
+            <div class="faq__intro">
+              <header class="section-header">
+                <p class="eyebrow">IV. Las Preguntas</p>
+                <h2>Preguntas<br />del Abismo</h2>
+              </header>
+              <p class="body-text faq__intro-text">
+                Algunas preguntas no tienen respuesta. Otras tienen demasiadas.
+                Aquí recogemos las dudas más frecuentes de los iniciados que se
+                asoman por primera vez al umbral de Nocturna.
+              </p>
+              <div
+                class="faq__ornament"
+                aria-hidden="true">
+                <span>✦</span>
+                <span class="faq__ornament-line"></span>
+                <span>✦</span>
+              </div>
+            </div>
+
+            <div
+              class="faq__accordion"
+              id="faq-accordion"
+              role="list">
+              <div
+                class="accordion-item"
+                role="listitem">
+                <button
+                  class="accordion-item__trigger"
+                  aria-expanded="false"
+                  aria-controls="faq-1"
+                  id="faq-btn-1">
+                  <span class="accordion-item__num">I</span>
+                  <span class="accordion-item__question"
+                    >¿Qué es exactamente Nocturna?</span
+                  >
+                  <span
+                    class="accordion-item__icon"
+                    aria-hidden="true">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none">
+                      <path
+                        d="M6 9l6 6 6-6"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </button>
+                <div
+                  class="accordion-item__body"
+                  id="faq-1"
+                  role="region"
+                  aria-labelledby="faq-btn-1"
+                  hidden>
+                  <div class="accordion-item__content">
+                    <p>
+                      Nocturna es un proyecto cultural independiente. No somos
+                      una revista, no somos un podcast, no somos una red social.
+                      Somos un santuario.
+                    </p>
+                    <p>
+                      Reunimos arte, filosofía, música y literatura bajo la
+                      premisa de que el pensamiento profundo es un acto de
+                      resistencia en el siglo XXI. Si el mundo avanza a base de
+                      destellos, nosotros preferimos la llama lenta de la vela.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="accordion-item"
+                role="listitem">
+                <button
+                  class="accordion-item__trigger"
+                  aria-expanded="false"
+                  aria-controls="faq-2"
+                  id="faq-btn-2">
+                  <span class="accordion-item__num">II</span>
+                  <span class="accordion-item__question"
+                    >¿Necesito conocimientos previos para entender el
+                    contenido?</span
+                  >
+                  <span
+                    class="accordion-item__icon"
+                    aria-hidden="true">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none">
+                      <path
+                        d="M6 9l6 6 6-6"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </button>
+                <div
+                  class="accordion-item__body"
+                  id="faq-2"
+                  role="region"
+                  aria-labelledby="faq-btn-2"
+                  hidden>
+                  <div class="accordion-item__content">
+                    <p>
+                      No. La única condición para entrar a Nocturna es la
+                      curiosidad genuina.
+                    </p>
+                    <p>
+                      Escribimos para quien lleva años estudiando filosofía y
+                      para quien acaba de descubrir que Klimt era algo más que
+                      un fondo de pantalla dorado. Los iniciados y los neófitos
+                      son igualmente bienvenidos en este umbral.
+                    </p>
+                    <blockquote class="faq__quote">
+                      "No hay ignorancia, solo distintos grados de asombro."
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="accordion-item"
+                role="listitem">
+                <button
+                  class="accordion-item__trigger"
+                  aria-expanded="false"
+                  aria-controls="faq-3"
+                  id="faq-btn-3">
+                  <span class="accordion-item__num">III</span>
+                  <span class="accordion-item__question"
+                    >¿Con qué frecuencia se publica nuevo contenido?</span
+                  >
+                  <span
+                    class="accordion-item__icon"
+                    aria-hidden="true">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none">
+                      <path
+                        d="M6 9l6 6 6-6"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </button>
+                <div
+                  class="accordion-item__body"
+                  id="faq-3"
+                  role="region"
+                  aria-labelledby="faq-btn-3"
+                  hidden>
+                  <div class="accordion-item__content">
+                    <p>
+                      El Códice Nocturno llega cada semana a tu correo, sin
+                      falta. Dentro encontrarás un ensayo largo, una obra de
+                      arte comentada, una recomendación musical y, cuando el
+                      momento lo merece, un texto más oscuro de lo habitual.
+                    </p>
+                    <p>
+                      En los Archivos (Galería, Música, Biblioteca) el contenido
+                      se actualiza de forma irregular, cuando algo digno de
+                      atención aparece en el horizonte.
+                    </p>
+                    <ul class="faq__list">
+                      <li><span>✦</span> Códice semanal — todos los lunes</li>
+                      <li>
+                        <span>✦</span> Obra de la semana — análisis profundo
+                        cada martes
+                      </li>
+                      <li>
+                        <span>✦</span> Ensayo del mes — el último domingo de
+                        cada mes
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="accordion-item"
+                role="listitem">
+                <button
+                  class="accordion-item__trigger"
+                  aria-expanded="false"
+                  aria-controls="faq-4"
+                  id="faq-btn-4">
+                  <span class="accordion-item__num">IV</span>
+                  <span class="accordion-item__question"
+                    >¿Por qué se llama "El Culto del Pensamiento"?</span
+                  >
+                  <span
+                    class="accordion-item__icon"
+                    aria-hidden="true">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none">
+                      <path
+                        d="M6 9l6 6 6-6"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </button>
+                <div
+                  class="accordion-item__body"
+                  id="faq-4"
+                  role="region"
+                  aria-labelledby="faq-btn-4"
+                  hidden>
+                  <div class="accordion-item__content">
+                    <p>
+                      La palabra <em>culto</em> tiene mala prensa, y eso nos
+                      parece perfecto. Originalmente significaba simplemente
+                      <em>cuidado</em> y <em>reverencia</em>: cultivar algo con
+                      devoción.
+                    </p>
+                    <p>
+                      Creemos que el pensamiento merece ese tipo de atención. No
+                      el pensamiento rápido, utilitario, algorítmico. El
+                      pensamiento que se sienta ante una pintura durante dos
+                      horas, que relee el mismo párrafo cinco veces hasta que
+                      algo se abre.
+                    </p>
+                    <p>Eso es lo que cultivamos. Eso es el culto.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="accordion-item"
+                role="listitem">
+                <button
+                  class="accordion-item__trigger"
+                  aria-expanded="false"
+                  aria-controls="faq-5"
+                  id="faq-btn-5">
+                  <span class="accordion-item__num">V</span>
+                  <span class="accordion-item__question"
+                    >¿Puedo contribuir con contenido a Nocturna?</span
+                  >
+                  <span
+                    class="accordion-item__icon"
+                    aria-hidden="true">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none">
+                      <path
+                        d="M6 9l6 6 6-6"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </button>
+                <div
+                  class="accordion-item__body"
+                  id="faq-5"
+                  role="region"
+                  aria-labelledby="faq-btn-5"
+                  hidden>
+                  <div class="accordion-item__content">
+                    <p>
+                      La Cámara está abierta a voces externas, pero la selección
+                      es estricta. No buscamos volumen. Buscamos precisión,
+                      profundidad y ese raro instinto de saber cuándo una obra
+                      merece ser contemplada en silencio.
+                    </p>
+                    <p>
+                      Si tienes algo que decir sobre arte, filosofía, música o
+                      literatura que no cabe en ningún otro sitio, escríbenos.
+                      El umbral está abierto para quienes llegan con las manos
+                      limpias y la mente hambrienta.
+                    </p>
+                    <a
+                      href="#newsletter"
+                      class="btn btn--ghost-gold btn--sm faq__cta-btn"
+                      >Contactar al Códice →</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══ NEWSLETTER ══ -->
+      <section
+        class="newsletter"
+        id="newsletter">
+        <div
+          class="section-bg"
+          aria-hidden="true">
+          <img
+            src="assets/quinta.png"
+            alt="" />
+          <div class="section-bg__mask section-bg__mask--newsletter"></div>
+          <div
+            class="newsletter-glow"
+            aria-hidden="true"></div>
+        </div>
+        <div class="container">
+          <div class="newsletter__inner">
+            <div
+              class="newsletter__emblem"
+              aria-hidden="true">
+              <img
+                src="assets/finalogo.png"
+                alt="" />
+            </div>
+            <header class="section-header section-header--center">
+              <p class="eyebrow">El Códice Nocturno</p>
+              <h2>Únete al Culto del Pensamiento</h2>
+              <p class="section-sub">
+                Una carta semanal con las mejores obras, reflexiones filosóficas
+                y los secretos mejor guardados de la cultura oscura.
+              </p>
+            </header>
+            <form
+              class="nl-form"
+              id="nl-form"
+              novalidate>
+              <div class="nl-form__row">
+                <label
+                  for="nl-email"
+                  class="sr-only"
+                  >Correo electrónico</label
+                >
+                <input
+                  type="email"
+                  id="nl-email"
+                  class="nl-form__input"
+                  placeholder="tu@correo.com"
+                  autocomplete="email"
+                  required />
+                <button
+                  type="submit"
+                  class="btn btn--primary">
+                  Suscribirse al Códice
+                </button>
+              </div>
+              <p class="nl-form__fine">
+                Sin spam. Sin algoritmos. Solo conocimiento.
+              </p>
+              <p
+                class="nl-form__msg"
+                id="nl-msg"
+                aria-live="polite"
+                role="status"></p>
+            </form>
+            <div class="nl-features">
+              <span><em>✦</em> Un ensayo semanal</span>
+              <span><em>✦</em> Obra de arte comentada</span>
+              <span><em>✦</em> Recomendación musical</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ══ FOOTER ══ -->
+    <footer class="site-footer">
+      <div
+        class="site-footer__bg"
+        aria-hidden="true">
+        <img
+          src="assets/footer.png"
+          alt="" />
+        <div class="site-footer__mask"></div>
+      </div>
+      <div class="container">
+        <div class="footer__main">
+          <div class="footer__brand">
+            <a
+              href="#hero"
+              aria-label="Nocturna — volver al inicio">
+              <img
+                src="assets/finalogo.png"
+                alt="Nocturna — The Cult of Thought"
+                class="footer__logo" />
+            </a>
+            <p class="footer__brand-name">Nocturna</p>
+            <p class="footer__brand-tag">The Cult of Thought.</p>
+          </div>
+          <nav
+            class="footer__nav"
+            aria-label="Footer nav">
+            <div class="footer__nav-col">
+              <h3>Archivos</h3>
+              <ul>
+                <li><a href="#galeria">La Galería</a></li>
+                <li><a href="#musica">La Música</a></li>
+                <li><a href="#biblioteca">La Biblioteca</a></li>
+              </ul>
+            </div>
+            <div class="footer__nav-col">
+              <h3>Nocturna</h3>
+              <ul>
+                <li><a href="#manifiesto">Manifiesto</a></li>
+                <li><a href="#camara">La Cámara</a></li>
+                <li><a href="#newsletter">El Códice</a></li>
+              </ul>
+            </div>
+          </nav>
+          <div class="footer__subscribe">
+            <h3>Suscripción al Códice</h3>
+            <form
+              id="footer-form"
+              novalidate>
+              <div class="footer__sub-field">
+                <label
+                  for="footer-email"
+                  class="sr-only"
+                  >Email footer</label
+                >
+                <input
+                  type="email"
+                  id="footer-email"
+                  placeholder="tu@correo.com"
+                  required />
+                <button
+                  type="submit"
+                  aria-label="Suscribirse">
+                  →
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div
+            class="footer__rule"
+            aria-hidden="true"></div>
+          <div class="footer__bottom-row">
+            <p>
+              © MMXXV Nocturna — The Cult of Thought. Omnia vincit cogitatio.
+            </p>
+            <p class="footer__motto">✦ Per Aspera Ad Astra ✦</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

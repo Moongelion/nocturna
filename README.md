@@ -1,0 +1,25 @@
+# Nocturna — The Cult of Thought
+
+An immersive landing page inspired by gothic aesthetics, philosophy, art and symbolism, developed with HTML, CSS and JavaScript. Still in progress, changing and updating. 
+![Preview](assets/preview.png)
+## Technologies
+
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- Git
+## Live Demo
+
+## Run locally
+
+```bash
+git clone https://github.com/moongelion/nocturna.git
+```
+
+Open `index.html` in your browser.
+
+## Author
+
+Luna 
+
+GitHub: https://github.com/moongelion
