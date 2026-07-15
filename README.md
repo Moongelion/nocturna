@@ -9,7 +9,7 @@ An immersive landing page inspired by gothic aesthetics, philosophy, art and sym
 - JavaScript (ES6)
 - Git
 ## Live Demo
-
+https://moongelion.github.io/nocturna/
 ## Run locally
 
 ```bash
