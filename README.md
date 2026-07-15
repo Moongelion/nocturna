@@ -1,6 +1,6 @@
 # Nocturna — The Cult of Thought
 
-An immersive landing page inspired by gothic aesthetics, philosophy, art and symbolism, developed with HTML, CSS and JavaScript. Still in progress, changing and updating. 
+An immersive landing page inspired by gothic aesthetics, philosophy, art and symbolism, developed with HTML, CSS and JavaScript. Currently under active development.
 ![Preview](assets/preview.png)
 ## Technologies
 
