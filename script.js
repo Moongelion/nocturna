@@ -15,27 +15,58 @@ const $$ = (s, ctx = document) => [...ctx.querySelectorAll(s)];
     ring.style.display = 'none';
     return;
   }
-
   let mx = -100,
     my = -100;
 
-  document.addEventListener('mousemove', (e) => {
-    mx = e.clientX;
-    my = e.clientY;
-    dot.style.left = mx + 'px';
-    dot.style.top = my + 'px';
-    ring.style.left = mx + 'px';
-    ring.style.top = my + 'px';
-  });
+document.addEventListener('mousemove', (e) => {
+
+  mx = e.clientX;
+  my = e.clientY;
+
+  dot.style.left = mx + 'px';
+  dot.style.top = my + 'px';
+
+  ring.style.left = mx + 'px';
+  ring.style.top = my + 'px';
+
+});
 
   const interactables =
     'a, button, .chamber, .art-card, .book, .tracklist__item';
+  const textFields =
+    'input, textarea, .hero__desc, .body-text, .accordion-item__content';
   document.addEventListener('mouseover', (e) => {
     if (e.target.closest(interactables)) {
       dot.classList.add('is-big');
       ring.classList.add('is-big');
     }
   });
+
+  // NEW
+  document.addEventListener('mouseover', (e) => {
+
+    if (e.target.closest(textFields)) {
+
+        dot.classList.add('is-text');
+        ring.classList.add('is-text');
+
+    }
+
+  });
+  
+  document.addEventListener('mouseout', (e) => {
+
+    if (e.target.closest(textFields)) {
+
+        dot.classList.remove('is-text');
+        ring.classList.remove('is-text');
+
+    }
+
+});
+  
+ 
+  /*not new*/
   document.addEventListener('mouseout', (e) => {
     if (e.target.closest(interactables)) {
       dot.classList.remove('is-big');

@@ -87,7 +87,7 @@ ol {
   list-style: none;
 }
 button {
-  cursor: pointer;
+  cursor: none;
   background: none;
   border: none;
   color: inherit;
@@ -401,6 +401,10 @@ h3 {
 }
 
 /* ── CURSOR ──────────────────────────────────────────── */
+
+* {
+    cursor: none;
+}
 .cursor-dot,
 .cursor-ring {
   position: fixed;
@@ -442,6 +446,23 @@ h3 {
   width: 46px;
   height: 46px;
   border-color: rgba(123, 63, 160, 0.65);
+}
+/* new */
+.cursor-dot.is-text {
+  opacity: 0;
+}
+
+.cursor-ring.is-text {
+
+  width: 2px;
+  height: 24px;
+
+  border-radius: 2px;
+
+  background: var(--purple);
+
+  border: none;
+
 }
 
 /* ═══════════════════════════════════════════════════════
@@ -1603,7 +1624,7 @@ h3 {
   padding: var(--s2) var(--s3);
   background: rgba(17, 17, 25, 0.8);
   border-bottom: 1px solid var(--border);
-  cursor: pointer;
+  cursor: none;
   transition: background 150ms;
 }
 .tracklist__item:last-child {
@@ -1678,7 +1699,7 @@ h3 {
 }
 
 .book {
-  cursor: pointer;
+  cursor: none;
 }
 .book__3d {
   perspective: 900px;
@@ -1951,7 +1972,7 @@ h3 {
   text-align: left;
   background: transparent;
   border: none;
-  cursor: pointer;
+  cursor: none;
   transition: background 200ms;
 }
 .accordion-item__trigger:hover {
