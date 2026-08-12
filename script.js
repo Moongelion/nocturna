@@ -34,8 +34,8 @@ document.addEventListener('mousemove', (e) => {
   const interactables =
     'a, button, .chamber, .art-card, .book, .tracklist__item';
   const textFields =
-    'input, textarea, .hero__desc, .body-text, .accordion-item__content';
-  document.addEventListener('mouseover', (e) => {
+    'input:not([type="range"]), textarea, .hero__desc, .body-text, .accordion-item__content';
+    document.addEventListener('mouseover', (e) => {
     if (e.target.closest(interactables)) {
       dot.classList.add('is-big');
       ring.classList.add('is-big');
@@ -280,3 +280,170 @@ li.forEach((e, i) => {
     programs__panel[i].classList.add('active');
   });
 });
+
+/* ──────────────────────────────────────────────────────
+   MUSIC PANEL 
+   ────────────────────────────────────────────────────── */
+
+const audio = document.getElementById("audio-player");
+const playBtn = document.getElementById("pw-play");
+const prevBtn = document.getElementById("pw-prev");
+const nextBtn = document.getElementById("pw-next");
+const playIcon = document.querySelector(".pw-play-icon");
+const pauseIcon = document.querySelector(".pw-pause-icon");
+const vinyl = document.querySelector(".vinyl__disc");
+const arm = document.querySelector(".vinyl__arm");
+const vinylLogo = document.querySelector(".vinyl__label img");
+const volume = document.getElementById("pw-volume");
+
+/*new*/
+const tracks = [
+  {
+    title: "Nocturno Op. 9 No. 2",
+    artist: "Frédéric Chopin",
+    src: "assets/music/Nocturne.Chopan.mp3"
+  },
+  {
+    title: "Fantasía en Re menor, K. 397",
+    artist: "W. A. Mozart",
+    src: "assets/music/FantasiaInDminorMozart.mp3"
+  },
+  {
+    title: "Sonata Claro de Luna — Adagio sostenuto",
+    artist: "Ludwig van Beethoven",
+    src: "assets/music/Moonlight.AdagioSostenuto.mp3"
+  },
+  {
+    title: "Vals en Si menor",
+    artist: "Frédéric Chopin",
+    src: "assets/music/PianoWaltzInBChopan.mp3"
+  },
+  {
+    title: "Sinfonía n.º 9 — Adagio",
+    artist: "Antonín Dvořák",
+    src: "assets/music/SymphonyNo.9NewWorldAdagio.Dvorak.mp3"
+  }
+];
+
+let currentTrack = 0;
+const trackItems = document.querySelectorAll(".tracklist__item");
+
+trackItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    const index = Number(item.dataset.idx);
+    const wasPlaying = !audio.paused;
+
+    loadTrack(index);
+
+    if (wasPlaying) {
+      audio.play();
+    }
+  });
+});
+
+function loadTrack(index) {
+  const track = tracks[index];
+
+  currentTrack = index;
+
+  audio.src = track.src;
+  audio.currentTime = 0;
+
+  document.getElementById("pw-track").textContent = track.title;
+  document.getElementById("pw-artist").textContent = track.artist;
+  document.getElementById("pw-fill").style.width = "0%";
+
+  trackItems.forEach((item) => {
+    const itemIndex = Number(item.dataset.idx);
+    const active = itemIndex === index;
+
+    item.classList.toggle("tracklist__item--active", active);
+    item.setAttribute("aria-pressed", active ? "true" : "false");
+  });
+}
+
+/*buttons*/
+
+prevBtn.addEventListener("click", () => {
+  const previous = (currentTrack - 1 + tracks.length) % tracks.length;
+  loadTrack(previous);
+  audio.play();
+});
+
+nextBtn.addEventListener("click", () => {
+  const next = (currentTrack + 1) % tracks.length;
+  loadTrack(next);
+  audio.play();
+});
+
+
+volume.addEventListener("input", () => {
+  audio.volume = volume.value;
+
+  volume.style.setProperty(
+    "--volume-level",
+    `${volume.value * 100}%`
+  );
+});
+
+playBtn.addEventListener("click", () => {
+
+  if (audio.paused) {
+    audio.play();
+  } else {
+    audio.pause();
+  }
+
+});
+
+audio.addEventListener("play", () => {
+
+  playIcon.hidden = true;
+  pauseIcon.hidden = false;
+
+  vinyl.classList.add("is-playing");
+  arm.classList.add("is-playing");
+
+  vinylLogo.style.animationPlayState = "running";
+
+});
+
+audio.addEventListener("pause", () => {
+
+  playIcon.hidden = false;
+  pauseIcon.hidden = true;
+
+  vinyl.classList.remove("is-playing");
+  arm.classList.remove("is-playing");
+
+});
+
+audio.addEventListener("timeupdate", () => {
+  if (!audio.duration) return;
+
+  const progress = (audio.currentTime / audio.duration) * 100;
+
+  document.getElementById("pw-fill").style.width = `${progress}%`;
+});
+
+const muteButton = document.getElementById("pw-mute");
+const volumeSlider = document.getElementById("pw-volume");
+
+let previousVolume = volumeSlider.value;
+
+muteButton.addEventListener("click", () => {
+  if (volumeSlider.value > 0) {
+    previousVolume = volumeSlider.value;
+
+    volumeSlider.value = 0;
+    volumeSlider.dispatchEvent(new Event("input", { bubbles: true }));
+
+    muteButton.setAttribute("aria-label", "Activar sonido");
+  } else {
+    volumeSlider.value = previousVolume || 1;
+    volumeSlider.dispatchEvent(new Event("input", { bubbles: true }));
+
+    muteButton.setAttribute("aria-label", "Silenciar");
+  }
+});
+volumeSlider.removeAttribute("title");

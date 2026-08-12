@@ -797,22 +797,53 @@
                     class="pw-btn pw-btn--play"
                     id="pw-play"
                     aria-label="Reproducir">
-                    <span class="pw-play-icon">&#9654;</span>
-                    <span
-                      class="pw-pause-icon"
-                      hidden
-                      >&#9646;&#9646;</span
-                    >
-                  </button>
+                    <span class="pw-play-icon">
+                      <svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>
+                        <span class="pw-pause-icon" hidden>
+                          <svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true">
+                            <rect x="7" y="5" width="3" height="14" rx="1" fill="currentColor"/>
+                            <rect x="14" y="5" width="3" height="14" rx="1" fill="currentColor"/></svg>
+                          </span>
+                        </button>
                   <button
                     class="pw-btn"
                     id="pw-next"
                     aria-label="Siguiente">
                     &#8250;&#8250;
                   </button>
-                </div>
+                  <div class="player-widget__volume">
+                    <button
+                    class="player-widget__volume-icon"
+                    id="pw-mute"
+                    type="button"
+                    aria-label="Silenciar">
+                    <svg
+                    viewBox="0 0 24 24"
+                    aria-hidden="true">
+                    <path
+                    d="M4 9v6h4l5 4V5L8 9H4z"
+                    fill="currentColor" />
+                    <path
+                    d="M16 9.5a4 4 0 0 1 0 5M18.5 7a7.5 7.5 0 0 1 0 10"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.4"
+                    stroke-linecap="round" />
+                  </svg>
+                </button>
+                <input
+                type="range"
+                id="pw-volume"
+                min="0"
+                max="1"
+                step="0.01"
+                value="1"
+                aria-label="Volumen">
               </div>
             </div>
+          </div>
+        </div>
 
             <div class="musica__content-col">
               <header class="section-header">
@@ -850,13 +881,13 @@
                   aria-pressed="false">
                   <span class="tracklist__num">02</span>
                   <div class="tracklist__info">
-                    <span class="tracklist__title">Lacrimosa</span>
+                    <span class="tracklist__title">Fantasía en Re menor, K. 397</span>
                     <span class="tracklist__artist"
-                      >W.A. Mozart — Requiem K.626</span
+                      >W.A. Mozart</span
                     >
                   </div>
-                  <span class="tracklist__genre">Sacro</span>
-                  <span class="tracklist__dur">2:46</span>
+                  <span class="tracklist__genre">Piano</span>
+                  <span class="tracklist__dur">-</span>
                 </li>
                 <li
                   class="tracklist__item"
@@ -866,11 +897,11 @@
                   aria-pressed="false">
                   <span class="tracklist__num">03</span>
                   <div class="tracklist__info">
-                    <span class="tracklist__title">Danse Macabre</span>
-                    <span class="tracklist__artist">Camille Saint-Saëns</span>
+                    <span class="tracklist__title"> Moonlight Sonata Adagio sostenuto</span>
+                    <span class="tracklist__artist">Ludwig van Beethoven</span>
                   </div>
-                  <span class="tracklist__genre">Orquesta</span>
-                  <span class="tracklist__dur">7:18</span>
+                  <span class="tracklist__genre">Sonata</span>
+                  <span class="tracklist__dur">-</span>
                 </li>
                 <li
                   class="tracklist__item"
@@ -880,13 +911,11 @@
                   aria-pressed="false">
                   <span class="tracklist__num">04</span>
                   <div class="tracklist__info">
-                    <span class="tracklist__title"
-                      >In the Hall of the Mountain King</span
-                    >
-                    <span class="tracklist__artist">Edvard Grieg</span>
+                    <span class="tracklist__title">Waltz Op. 69 No. 2 in B minor</span>
+                    <span class="tracklist__artist">Frédéric Chopin</span>
                   </div>
-                  <span class="tracklist__genre">Programa</span>
-                  <span class="tracklist__dur">2:29</span>
+                  <span class="tracklist__genre">Waltz</span>
+                  <span class="tracklist__dur">-</span>
                 </li>
                 <li
                   class="tracklist__item"
@@ -896,13 +925,11 @@
                   aria-pressed="false">
                   <span class="tracklist__num">05</span>
                   <div class="tracklist__info">
-                    <span class="tracklist__title"
-                      >Moonlight Sonata Op. 27</span
-                    >
-                    <span class="tracklist__artist">Ludwig van Beethoven</span>
+                    <span class="tracklist__title"> Symphony No9 From The New World</span>
+                    <span class="tracklist__artist">Antonín Dvořák</span>
                   </div>
-                  <span class="tracklist__genre">Sonata</span>
-                  <span class="tracklist__dur">5:48</span>
+                  <span class="tracklist__genre">Orquesta</span>
+                  <span class="tracklist__dur">-</span>
                 </li>
               </ol>
               <a
@@ -1614,6 +1641,9 @@
         </div>
       </div>
     </footer>
+    <audio id="audio-player">
+    <source src="assets/music/PianoWaltzInBChopan.mp3" type="audio/mpeg">
+  </audio>
 
     <script src="script.js"></script>
   </body>
