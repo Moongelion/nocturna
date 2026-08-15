@@ -267,20 +267,6 @@ document.addEventListener('mousemove', (e) => {
   });
 })();
 
-const li = document.querySelectorAll('.tab');
-const programs__panel = document.querySelectorAll('.chamber--panel');
-
-li.forEach((e, i) => {
-  li[i].addEventListener('click', () => {
-    li.forEach((e, i) => {
-      li[i].classList.remove('active');
-      programs__panel[i].classList.remove('active');
-    });
-    li[i].classList.add('active');
-    programs__panel[i].classList.add('active');
-  });
-});
-
 /* ──────────────────────────────────────────────────────
    MUSIC PANEL 
    ────────────────────────────────────────────────────── */
