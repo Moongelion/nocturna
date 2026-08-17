@@ -267,9 +267,7 @@ document.addEventListener('mousemove', (e) => {
   });
 })();
 
-/* ──────────────────────────────────────────────────────
-   MUSIC PANEL 
-   ────────────────────────────────────────────────────── */
+/* ─────────────MUSIC PANEl ──────────── */
 
 const audio = document.getElementById("audio-player");
 const playBtn = document.getElementById("pw-play");
@@ -433,3 +431,55 @@ muteButton.addEventListener("click", () => {
   }
 });
 volumeSlider.removeAttribute("title");
+
+/* ──────────────────────────────────────────────────────
+   BOOK MODAL
+   ────────────────────────────────────────────────────── */
+
+const bookModal = document.getElementById("book-modal");
+const bookModalClose = document.getElementById("book-modal-close");
+const bookModalBody = bookModal?.querySelector(".book-modal__body");
+
+const books = document.querySelectorAll(".book");
+
+books.forEach((book) => {
+  book.addEventListener("click", () => {
+    const title = book.querySelector("h3")?.textContent || "";
+    const author = book.querySelector(".book__author")?.textContent || "";
+    const description = book.querySelector(".body-text")?.textContent || "";
+    const template = book.querySelector(".book-modal-template");
+    const templateContent = template.content.cloneNode(true);
+    const cover = book.querySelector(".book__cover-img")?.getAttribute("src");
+    const tags = [...book.querySelectorAll(".book__tags .tag")]
+      .map((tag) => tag.textContent)
+      .join(" · ");
+    
+    const modalCover = bookModal.querySelector(".book-modal__cover");
+
+modalCover.src = cover;
+modalCover.alt = title;
+
+    bookModal.querySelector("#book-modal-title").textContent = title;
+    bookModal.querySelector("#book-modal-author").textContent = author;
+    bookModal.querySelector("#book-modal-description").textContent = description;
+    bookModal.querySelector("#book-modal-tags").textContent = tags;
+
+    const modalSections = bookModal.querySelector(".book-modal__sections");
+
+    modalSections.replaceChildren(templateContent);
+    bookModal.classList.add("is-open");
+    bookModal.setAttribute("aria-hidden", "false");
+  });
+});
+
+bookModalClose?.addEventListener("click", () => {
+  bookModal.classList.remove("is-open");
+  bookModal.setAttribute("aria-hidden", "true");
+});
+
+bookModal?.addEventListener("click", (e) => {
+  if (e.target === bookModal) {
+    bookModal.classList.remove("is-open");
+    bookModal.setAttribute("aria-hidden", "true");
+  }
+});
