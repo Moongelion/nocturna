@@ -483,3 +483,35 @@ bookModal?.addEventListener("click", (e) => {
     bookModal.setAttribute("aria-hidden", "true");
   }
 });
+
+const statCards = document.querySelectorAll(".stat-card");
+const statModal = document.querySelector("#stat-modal");
+const statModalClose = document.querySelector("#stat-modal-close");
+const statModalBody = document.querySelector(".stat-modal__body");
+
+statCards.forEach((card) => {
+  card.addEventListener("click", () => {
+    const template = card.querySelector(".stat-modal-template");
+
+    if (!template) return;
+
+    const content = template.content.cloneNode(true);
+
+    statModalBody.replaceChildren(content);
+
+    statModal.classList.add("is-open");
+    statModal.setAttribute("aria-hidden", "false");
+  });
+});
+
+statModalClose?.addEventListener("click", () => {
+  statModal.classList.remove("is-open");
+  statModal.setAttribute("aria-hidden", "true");
+});
+
+statModal?.addEventListener("click", (e) => {
+  if (e.target === statModal) {
+    statModal.classList.remove("is-open");
+    statModal.setAttribute("aria-hidden", "true");
+  }
+});

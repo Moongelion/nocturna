@@ -240,39 +240,145 @@
                 pintura que perturba, la filosofía que incomoda, la música que
                 no necesita cuatro acordes para conmover.
               </p>
-              <a
-                href="#"
-                class="btn btn--primary btn--arrow">
-                Leer el Manifiesto Completo
-                <svg
-                  class="btn__arrow-svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  aria-hidden="true">
-                  <path
-                    d="M5 12h14M13 6l6 6-6 6"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-              </a>
+                <a
+                  href="manifiesto.html"
+                  class="btn btn--primary btn--arrow">
+                  Leer el Manifiesto Completo
+                  <svg
+                    class="btn__arrow-svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    aria-hidden="true">
+                    <path
+                      d="M5 12h14M13 6l6 6-6 6"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
             </div>
             <div class="manifiesto__stats">
               <div class="stat-card">
                 <span class="stat-card__n">XII</span>
                 <span class="stat-card__rule"></span>
                 <span class="stat-card__l">Principios del Códice</span>
+                <template class="stat-modal-template">
+                  <section>
+                    <h3>I. Contra la velocidad.</h3>
+                    <p>La contemplación exige tiempo.</p>
+                  </section>
+                  <section>
+                    <h3>II. Contra el consenso.</h3>
+                    <p>Pensar comienza donde termina la obediencia.</p>
+                  </section>
+                  <section>
+                    <h3>III. Contra el olvido.</h3>
+                    <p>Lo que una época abandona no pierde necesariamente su valor.</p>
+                  </section>
+                  <section>
+                    <h3>IV. Contra la superficie.</h3>
+                    <p>Toda obra digna exige una segunda mirada.</p>
+                  </section>
+                  <section>
+                    <h3>V. La dificultad importa.</h3>
+                    <p>No todo lo valioso debe ser fácil.</p>
+                  </section>
+                  <section>
+                    <h3>VI. Pensar antes de consumir.</h3>
+                    <p>La cultura debe transformar, no simplemente entretener.</p>
+                  </section>
+                  <section>
+                    <h3>VII. La belleza no necesita utilidad.</h3>
+                  </section>
+                  <section>
+                    <h3>VIII. La duda es una disciplina.</h3>
+                  </section>
+                  <section>
+                    <h3>IX. Interpretar también es crear.</h3>
+                  </section>
+                  <section>
+                    <h3>X. El pensamiento debe incomodar.</h3>
+                  </section>
+                  <section>
+                    <h3>XI. Conservar es resistir.</h3>
+                  </section>
+                  <section>
+                    <h3>XII. Buscar lo que permanece.</h3>
+                  </section>
+                </template>
               </div>
               <div class="stat-card">
                 <span class="stat-card__n">∞</span>
                 <span class="stat-card__rule"></span>
                 <span class="stat-card__l">Obras Analizadas</span>
+                <template class="stat-modal-template">
+                  <section>
+                    <h3>Una obra no termina en su autor.</h3>
+                    <p>También pertenece a quienes vuelven a mirarla.</p>
+                  </section>
+
+                  <section>
+                    <h3>El contexto importa.</h3>
+                    <p>Ninguna obra existe fuera de su tiempo.</p>
+                  </section>
+
+                  <section>
+                    <h3>Mirar no es comprender.</h3>
+                    <p>Toda contemplación exige una lectura más profunda.</p>
+                  </section>
+
+                  <section>
+                    <h3>La belleza también puede perturbar.</h3>
+                    <p>No todo lo bello debe resultar confortable.</p>
+                  </section>
+
+                  <section>
+                    <h3>El símbolo permanece.</h3>
+                    <p>Una imagen puede sobrevivir a la época que la creó.</p>
+                  </section>
+
+                  <section>
+                    <h3>Interpretar es tomar posición.</h3>
+                    <p>Toda mirada revela tanto al observador como a la obra.</p>
+                  </section>
+                </template>
               </div>
-              <div class="stat-card stat-card--accent">
+              <div class="stat-card">
                 <span class="stat-card__n">I</span>
                 <span class="stat-card__rule"></span>
                 <span class="stat-card__l">Culto. El Pensamiento.</span>
+                <template class="stat-modal-template">
+                  <section>
+                    <h3>Pensar es resistir.</h3>
+                    <p>Frente al ruido, conservar la capacidad de detenerse.</p>
+                  </section>
+
+                  <section>
+                    <h3>Leer es atravesar.</h3>
+                    <p>Una gran obra no se consume: se habita.</p>
+                  </section>
+
+                  <section>
+                    <h3>La curiosidad no se domestica.</h3>
+                    <p>Preguntar es negarse a aceptar respuestas heredadas.</p>
+                  </section>
+
+                  <section>
+                    <h3>La cultura no es decoración.</h3>
+                    <p>Es una forma de comprender y transformar el mundo.</p>
+                  </section>
+
+                  <section>
+                    <h3>La soledad también piensa.</h3>
+                    <p>No todo silencio necesita ser llenado.</p>
+                  </section>
+
+                  <section>
+                    <h3>El pensamiento permanece.</h3>
+                    <p>Cuando el ruido desaparece, quedan las preguntas.</p>
+                  </section>
+                </template>
               </div>
             </div>
           </div>
@@ -1071,8 +1177,7 @@
             </article>
           </div>
         </div>
-        <div
-        class="book-modal"
+        <div class="book-modal"
         id="book-modal"
         aria-hidden="true">
         <div class="book-modal__content">
@@ -1103,6 +1208,18 @@
     </div>
   </div>
 </section>
+<div class="stat-modal" id="stat-modal" aria-hidden="true">
+  <div class="stat-modal__content">
+    <button
+    class="stat-modal__close"
+    id="stat-modal-close"
+    type="button"
+    aria-label="Cerrar">
+    ×
+    </button>
+    <div class="stat-modal__body"></div>
+  </div>
+</div>
 
       <!-- ══ LA CÁMARA — ENSAYO DESTACADO ══ -->
       <section

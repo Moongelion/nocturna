@@ -2708,3 +2708,256 @@ background: linear-gradient(
   margin: 0;
   color: var(--t-secondary);
 }
+
+/* ══ MODAL STAT CARDS ══ */
+
+.stat-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: var(--s4);
+
+  background: rgba(0, 0, 0, 0.75);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition:
+    opacity 0.25s ease,
+    visibility 0.25s ease;
+}
+
+.stat-modal.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.stat-modal__content {
+  position: relative;
+
+  width: min(700px, 90vw);
+  max-height: 80vh;
+  overflow-y: auto;
+
+  padding: var(--s5);
+
+  background: #120d08;
+  border: 1px solid var(--border-gold);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+}
+
+.stat-modal__body h3 {
+  margin: 0 0 var(--s1);
+
+  font-family: var(--ff-display);
+  font-size: 1.15rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: var(--gold);
+}
+
+.stat-modal__body p {
+  margin: 0;
+
+  font-size: 0.95rem;
+  line-height: 1.7;
+
+  color: var(--t-muted);
+}
+
+.stat-modal__close {
+  position: absolute;
+  top: var(--s2);
+  right: var(--s2);
+
+  border: none;
+  background: transparent;
+
+  color: var(--gold);
+  font-size: 2rem;
+
+  cursor: pointer;
+}
+
+.stat-modal__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s4);
+}
+
+.stat-modal__body section {
+  padding-bottom: var(--s3);
+}
+
+.stat-modal__body h3 {
+  margin-bottom: var(--s1);
+  color: var(--gold);
+}
+
+.stat-modal__body p {
+  color: var(--t-muted);
+  line-height: 1.7;
+}
+.stat-card {
+  cursor: pointer;
+}
+
+/* ════MANIFIESTO — PÁGINA COMPLETA ═════ */
+
+.manifesto-page {
+  position: relative;
+  min-height: 100vh;
+  padding: var(--s5) 0 var(--s6);
+  overflow: hidden;
+}
+
+.manifesto-page .section-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+}
+
+.manifesto-page .section-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.manifesto-page .section-bg__mask {
+  position: absolute;
+  inset: 0;
+}
+
+/* Cabecera */
+
+.manifesto-page__header {
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: var(--s6) 0 var(--s5);
+}
+
+.manifesto-page__header .eyebrow {
+  margin-bottom: var(--s2);
+}
+
+.manifesto-page__header h1 {
+  margin: 0;
+  font-family: var(--ff-display);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: 0.02em;
+  color: var(--t-main);
+}
+
+.manifesto-page__intro {
+  margin-top: var(--s4);
+
+  font-family: var(--ff-deco);
+  font-size: 1.35rem;
+  font-style: italic;
+  color: var(--gold);
+}
+
+/* Texto */
+
+.manifesto-page__content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-bottom: var(--s6);
+}
+
+.manifesto-page__content p {
+  margin: 0 0 var(--s3);
+
+  font-family: var(--ff-body);
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: var(--t-muted);
+}
+
+/* Subtítulos */
+
+.manifesto-page__content h2 {
+  margin: var(--s6) 0 var(--s2);
+
+  font-family: var(--ff-display);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--t-main);
+}
+
+/* Citas */
+
+.manifesto-page__content blockquote {
+  margin: var(--s5) 0;
+  padding: var(--s2) 0 var(--s2) var(--s3);
+
+  border-left: 2px solid var(--purple);
+
+  font-family: var(--ff-deco);
+  font-size: 1.3rem;
+  font-style: italic;
+  line-height: 1.7;
+  color: var(--t-main);
+}
+
+/* Separación visual */
+
+.manifesto-page__content h2::before {
+  content: "—";
+  display: block;
+
+  margin-bottom: var(--s1);
+
+  font-family: var(--ff-body);
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  color: var(--gold);
+}
+
+/* Cierre */
+
+.manifesto-page__closing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: var(--s6);
+  padding-top: var(--s5);
+
+  text-align: center;
+}
+
+.manifesto-page__closing .stat-card__rule {
+  width: 100px;
+  margin: var(--s2) 0;
+}
+
+.manifesto-page__closing p {
+  margin: var(--s2) 0;
+
+  font-family: var(--ff-display);
+  font-size: 1.4rem;
+  letter-spacing: 0.2em;
+  color: var(--gold);
+}
+
+.manifesto-page__closing small {
+  margin-top: var(--s2);
+
+  font-family: var(--ff-deco);
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--t-muted);
+}
