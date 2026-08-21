@@ -1,0 +1,1093 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+
+    <title>Nocturna — La Galería</title>
+
+    <link
+      rel="stylesheet"
+      href="style.css" />
+
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;900&family=Cinzel+Decorative:wght@400;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+      rel="stylesheet" />
+  </head>
+
+  <body>
+
+    <!-- ══ CURSOR ══ -->
+
+    <div
+      class="cursor-dot"
+      id="cursor-dot"
+      aria-hidden="true"></div>
+
+    <div
+      class="cursor-ring"
+      id="cursor-ring"
+      aria-hidden="true"></div>
+
+
+    <!-- ══ HEADER ══ -->
+
+    <header
+      class="site-header"
+      id="site-header">
+
+      <div class="header__inner">
+
+        <a
+          href="index.html"
+          class="header__logo"
+          aria-label="Nocturna — inicio">
+
+          <img
+            src="assets/finalogo.png"
+            alt=""
+            class="header__logo-img"
+            aria-hidden="true" />
+
+          <span class="header__logo-wordmark">
+            Nocturna
+          </span>
+
+        </a>
+
+
+        <nav
+          class="header__nav"
+          id="main-nav"
+          aria-label="Navegación principal">
+
+          <ul class="nav__list">
+
+            <li class="nav__item">
+              <a
+                href="index.html#manifiesto"
+                class="nav__link">
+                Manifiesto
+              </a>
+            </li>
+
+            <li class="nav__item nav__item--has-dropdown">
+
+              <button
+                class="nav__link nav__link--btn"
+                aria-haspopup="true"
+                aria-expanded="false"
+                id="archivos-btn">
+
+                Archivos
+
+                <svg
+                  class="nav__chevron"
+                  viewBox="0 0 12 7"
+                  fill="none"
+                  aria-hidden="true">
+
+                  <path
+                    d="M1 1L6 6L11 1"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+
+                </svg>
+
+              </button>
+
+              <ul
+                class="nav__dropdown"
+                role="menu"
+                aria-labelledby="archivos-btn">
+
+                <li role="none">
+                  <a
+                    href="gallery.html"
+                    class="nav__dropdown-link"
+                    role="menuitem">
+                    ✦ La Galería
+                  </a>
+                </li>
+
+                <li role="none">
+                  <a
+                    href="index.html#musica"
+                    class="nav__dropdown-link"
+                    role="menuitem">
+                    ✦ La Música
+                  </a>
+                </li>
+
+                <li role="none">
+                  <a
+                    href="index.html#biblioteca"
+                    class="nav__dropdown-link"
+                    role="menuitem">
+                    ✦ La Biblioteca
+                  </a>
+                </li>
+
+              </ul>
+
+            </li>
+
+            <li class="nav__item">
+              <a
+                href="index.html#camara"
+                class="nav__link">
+                La Cámara
+              </a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+
+        <div class="header__cta">
+
+          <a
+            href="index.html#newsletter"
+            class="btn btn--ghost-gold btn--sm">
+            Suscripción al Códice
+          </a>
+
+        </div>
+
+
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="main-nav">
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+        </button>
+
+      </div>
+
+    </header>
+
+
+    <!-- ══════════════════════════════════════════════
+         GALERÍA COMPLETA
+         ══════════════════════════════════════════════ -->
+
+    <main>
+
+      <section
+        class="gallery-page"
+        id="gallery-page">
+
+
+        <!-- ── CABECERA ── -->
+
+        <div class="container">
+
+          <header class="gallery-page__header">
+
+            <p class="eyebrow">
+              Archivo de Arte
+            </p>
+
+            <h1>
+              Gallery
+            </h1>
+
+            <p class="gallery-page__intro">
+              Una colección de obras reunidas bajo la mirada de Nocturna.
+              Pintura, símbolo, belleza y perturbación.
+            </p>
+
+          </header>
+
+
+          <!-- ── CUERPO DE LA GALERÍA ── -->
+
+          <div class="gallery-page__layout">
+
+
+            <!-- ── MENÚ LATERAL ── -->
+
+            <aside class="gallery-page__sidebar">
+
+              <p class="gallery-page__sidebar-label">
+                Colecciones
+              </p>
+
+              <nav
+                class="gallery-page__nav"
+                aria-label="Categorías de la galería">
+
+                <a href="#horror-art">
+                  Horror art
+                </a>
+
+                <a href="#classical-art">
+                  Classical art
+                </a>
+
+                <a href="#calming-art">
+                  Calming art
+                </a>
+
+                <a href="#weird-art">
+                  Weird art
+                </a>
+
+                <a href="#art-nouveau">
+                  Art nouveau
+                </a>
+
+                <a href="#other-art">
+                  Other
+                </a>
+
+              </nav>
+
+            </aside>
+
+
+            <!-- ── CONTENIDO ── -->
+
+            <div class="gallery-page__content">
+
+            <!-- ══ HORROR ART ══ -->
+
+            <section
+              class="gallery-category"
+              id="horror-art">
+
+              <header class="gallery-category__header">
+
+                <span class="gallery-category__number">
+                  I
+                </span>
+
+                <div>
+                  <p class="eyebrow">
+                    I · Collection
+                  </p>
+
+                  <h2>
+                    Horror art
+                  </h2>
+                </div>
+
+              </header>
+
+
+              <div class="gallery-grid">
+
+                <!-- HORROR 1 -->
+
+                <article class="gallery-artwork">
+
+                  <div class="gallery-artwork__image">
+
+                    <img
+                      src="assets/gallery/horror1.jpg"
+                      alt="AA72, Zdzisław Beksiński, 1972"
+                      loading="lazy" />
+
+                    <div class="gallery-artwork__info">
+
+                      <span class="tag">
+                        HORROR ART
+                      </span>
+
+                      <h3>
+                        AA72
+                      </h3>
+
+                      <time>
+                        1972 · Zdzisław Beksiński
+                      </time>
+
+                    </div>
+
+                  </div>
+
+                </article>
+
+
+                <!-- HORROR 2 -->
+
+                <article class="gallery-artwork">
+
+                  <div class="gallery-artwork__image">
+
+                    <img
+                      src="assets/gallery/horror2.jpg"
+                      alt="AD74, Zdzisław Beksiński, 1974"
+                      loading="lazy" />
+
+                    <div class="gallery-artwork__info">
+
+                      <span class="tag">
+                        HORROR ART
+                      </span>
+
+                      <h3>
+                        AD74
+                      </h3>
+
+                      <time>
+                        1974 · Zdzisław Beksiński
+                      </time>
+
+                    </div>
+
+                  </div>
+
+                </article>
+
+
+                <!-- HORROR 3 -->
+
+                <article class="gallery-artwork">
+
+                  <div class="gallery-artwork__image">
+
+                    <img
+                      src="assets/gallery/horror3.jpg"
+                      alt="Death and Life, Gustav Klimt, 1908–1911"
+                      loading="lazy" />
+
+                    <div class="gallery-artwork__info">
+
+                      <span class="tag">
+                        HORROR ART
+                      </span>
+
+                      <h3>
+                        Death and Life
+                      </h3>
+
+                      <time>
+                        1908–1911 · Gustav Klimt
+                      </time>
+
+                    </div>
+
+                  </div>
+
+                </article>
+
+
+                <!-- HORROR 4 -->
+
+                <article class="gallery-artwork">
+
+                  <div class="gallery-artwork__image">
+
+                    <img
+                      src="assets/gallery/horror4.jpg"
+                      alt="Necronom IV, H. R. Giger, 1976"
+                      loading="lazy" />
+
+                    <div class="gallery-artwork__info">
+
+                      <span class="tag">
+                        HORROR ART
+                      </span>
+
+                      <h3>
+                        Necronom IV
+                      </h3>
+
+                      <time>
+                        1976 · H. R. Giger
+                      </time>
+
+                    </div>
+
+                  </div>
+
+                </article>
+
+
+                <!-- HORROR 5 -->
+
+                <article class="gallery-artwork">
+
+                  <div class="gallery-artwork__image">
+
+                    <img
+                      src="assets/gallery/horror5jpg.jpg"
+                      alt="Saturn Devouring His Son, Francisco Goya, 1820–1823"
+                      loading="lazy" />
+
+                    <div class="gallery-artwork__info">
+
+                      <span class="tag">
+                        HORROR ART
+                      </span>
+
+                      <h3>
+                        Saturn Devouring His Son
+                      </h3>
+
+                      <time>
+                        1820–1823 · Francisco Goya
+                      </time>
+
+                    </div>
+
+                  </div>
+
+                </article>
+
+
+                <!-- HORROR 6 -->
+
+                <article class="gallery-artwork">
+
+                  <div class="gallery-artwork__image">
+
+                    <img
+                      src="assets/gallery/horror6.jpg"
+                      alt="The Great Red Dragon and the Woman Clothed with the Sun, William Blake, 1805–1810"
+                      loading="lazy" />
+
+                    <div class="gallery-artwork__info">
+
+                      <span class="tag">
+                        HORROR ART
+                      </span>
+
+                      <h3>
+                        The Great Red Dragon and the Woman Clothed with the Sun
+                      </h3>
+
+                      <time>
+                        1805–1810 · William Blake
+                      </time>
+
+                    </div>
+
+                  </div>
+
+                </article>
+
+
+                <!-- HORROR 7 -->
+
+                <article class="gallery-artwork">
+
+                  <div class="gallery-artwork__image">
+
+                    <img
+                      src="assets/gallery/horror7.jpg"
+                      alt="Der Nachtmahr, Henry Fuseli, 1781"
+                      loading="lazy" />
+
+                    <div class="gallery-artwork__info">
+
+                      <span class="tag">
+                        HORROR ART
+                      </span>
+
+                      <h3>
+                        Der Nachtmahr
+                      </h3>
+
+                      <time>
+                        1781 · Henry Fuseli
+                      </time>
+
+                    </div>
+
+                  </div>
+
+                </article>
+
+
+                <!-- HORROR 8 -->
+
+                <article class="gallery-artwork">
+
+                  <div class="gallery-artwork__image">
+
+                    <img
+                      src="assets/gallery/horror8.jpg"
+                      alt="Der Weg ins Hölle, Alfred Kubin, 1904"
+                      loading="lazy" />
+
+                    <div class="gallery-artwork__info">
+
+                      <span class="tag">
+                        HORROR ART
+                      </span>
+
+                      <h3>
+                        Der Weg ins Hölle
+                      </h3>
+
+                      <time>
+                        1904 · Alfred Kubin
+                      </time>
+
+                    </div>
+
+                  </div>
+
+                </article>
+
+              </div>
+
+            </section>
+
+
+              <!-- ══ CLASSICAL ART ══ -->
+
+            <section
+              class="gallery-category"
+              id="classical-art">
+
+              <header class="gallery-category__header">
+
+                <span class="gallery-category__number">
+                  II
+                </span>
+
+                <div>
+                  <p class="eyebrow">
+                    II · Collection
+                  </p>
+
+                  <h2>
+                    Classical art
+                  </h2>
+                </div>
+
+              </header>
+
+
+              <div class="gallery-grid">
+
+                <article class="gallery-artwork">
+                  <div class="gallery-artwork__image">
+                    <div class="gallery-artwork__placeholder"></div>
+                  </div>
+                </article>
+
+                <article class="gallery-artwork">
+                  <div class="gallery-artwork__image">
+                    <div class="gallery-artwork__placeholder"></div>
+                  </div>
+                </article>
+
+                <article class="gallery-artwork">
+                  <div class="gallery-artwork__image">
+                    <div class="gallery-artwork__placeholder"></div>
+                  </div>
+                </article>
+
+                <article class="gallery-artwork">
+                  <div class="gallery-artwork__image">
+                    <div class="gallery-artwork__placeholder"></div>
+                  </div>
+                </article>
+
+                <article class="gallery-artwork">
+                  <div class="gallery-artwork__image">
+                    <div class="gallery-artwork__placeholder"></div>
+                  </div>
+                </article>
+
+                <article class="gallery-artwork">
+                  <div class="gallery-artwork__image">
+                    <div class="gallery-artwork__placeholder"></div>
+                  </div>
+                </article>
+
+                <article class="gallery-artwork">
+                  <div class="gallery-artwork__image">
+                    <div class="gallery-artwork__placeholder"></div>
+                  </div>
+                </article>
+
+                <article class="gallery-artwork">
+                  <div class="gallery-artwork__image">
+                    <div class="gallery-artwork__placeholder"></div>
+                  </div>
+                </article>
+
+              </div>
+
+            </section>
+
+
+
+              <!-- ══ CALMING ART ══ -->
+
+              <section
+                class="gallery-category"
+                id="calming-art">
+
+                <header class="gallery-category__header">
+
+                  <span class="gallery-category__number">
+                    III
+                  </span>
+
+                  <div>
+                    <p class="eyebrow">
+                      III · Collection
+                    </p>
+
+                    <h2>
+                      Calming art
+                    </h2>
+                  </div>
+
+                </header>
+
+
+                  <div class="gallery-grid">
+
+                    <article class="gallery-artwork">
+                      <div class="gallery-artwork__image">
+                        <div class="gallery-artwork__placeholder"></div>
+                      </div>
+                    </article>
+
+                    <article class="gallery-artwork">
+                      <div class="gallery-artwork__image">
+                        <div class="gallery-artwork__placeholder"></div>
+                      </div>
+                    </article>
+
+                    <article class="gallery-artwork">
+                      <div class="gallery-artwork__image">
+                        <div class="gallery-artwork__placeholder"></div>
+                      </div>
+                    </article>
+
+                    <article class="gallery-artwork">
+                      <div class="gallery-artwork__image">
+                        <div class="gallery-artwork__placeholder"></div>
+                      </div>
+                    </article>
+
+                    <article class="gallery-artwork">
+                      <div class="gallery-artwork__image">
+                        <div class="gallery-artwork__placeholder"></div>
+                      </div>
+                    </article>
+
+                    <article class="gallery-artwork">
+                      <div class="gallery-artwork__image">
+                        <div class="gallery-artwork__placeholder"></div>
+                      </div>
+                    </article>
+
+                    <article class="gallery-artwork">
+                      <div class="gallery-artwork__image">
+                        <div class="gallery-artwork__placeholder"></div>
+                      </div>
+                    </article>
+
+                    <article class="gallery-artwork">
+                      <div class="gallery-artwork__image">
+                        <div class="gallery-artwork__placeholder"></div>
+                      </div>
+                    </article>
+
+                  </div>
+
+              </section>
+
+
+              <!-- ══ WEIRD ART ══ -->
+
+              <section
+                class="gallery-category"
+                id="weird-art">
+
+                <header class="gallery-category__header">
+
+                  <span class="gallery-category__number">
+                    IV
+                  </span>
+
+                  <div>
+                    <p class="eyebrow">
+                      IV · Collection
+                    </p>
+
+                    <h2>
+                      Weird art
+                    </h2>
+                  </div>
+
+                </header>
+                <div class="gallery-grid">
+
+                  <article class="gallery-artwork">
+                    <div class="gallery-artwork__image">
+                      <div class="gallery-artwork__placeholder"></div>
+                    </div>
+                  </article>
+
+                  <article class="gallery-artwork">
+                    <div class="gallery-artwork__image">
+                      <div class="gallery-artwork__placeholder"></div>
+                    </div>
+                  </article>
+
+                  <article class="gallery-artwork">
+                    <div class="gallery-artwork__image">
+                      <div class="gallery-artwork__placeholder"></div>
+                    </div>
+                  </article>
+
+                  <article class="gallery-artwork">
+                    <div class="gallery-artwork__image">
+                      <div class="gallery-artwork__placeholder"></div>
+                    </div>
+                  </article>
+
+                  <article class="gallery-artwork">
+                    <div class="gallery-artwork__image">
+                      <div class="gallery-artwork__placeholder"></div>
+                    </div>
+                  </article>
+
+                  <article class="gallery-artwork">
+                    <div class="gallery-artwork__image">
+                      <div class="gallery-artwork__placeholder"></div>
+                    </div>
+                  </article>
+
+                  <article class="gallery-artwork">
+                    <div class="gallery-artwork__image">
+                      <div class="gallery-artwork__placeholder"></div>
+                    </div>
+                  </article>
+
+                  <article class="gallery-artwork">
+                    <div class="gallery-artwork__image">
+                      <div class="gallery-artwork__placeholder"></div>
+                    </div>
+                  </article>
+
+                </div>
+
+              </section>
+
+
+              <!-- ══ ART NOUVEAU ══ -->
+
+              <section
+                class="gallery-category"
+                id="art-nouveau">
+
+                <header class="gallery-category__header">
+
+                  <span class="gallery-category__number">
+                    V
+                  </span>
+
+                  <div>
+                    <p class="eyebrow">
+                      V · Collection
+                    </p>
+
+                    <h2>
+                      Art nouveau
+                    </h2>
+                  </div>
+
+                </header>
+
+                  <div class="gallery-grid">
+
+                    <article class="gallery-artwork">
+                      <div class="gallery-artwork__image">
+                        <div class="gallery-artwork__placeholder"></div>
+                      </div>
+                    </article>
+
+                    <article class="gallery-artwork">
+                      <div class="gallery-artwork__image">
+                        <div class="gallery-artwork__placeholder"></div>
+                      </div>
+                    </article>
+
+                    <article class="gallery-artwork">
+                      <div class="gallery-artwork__image">
+                        <div class="gallery-artwork__placeholder"></div>
+                      </div>
+                    </article>
+
+                    <article class="gallery-artwork">
+                      <div class="gallery-artwork__image">
+                        <div class="gallery-artwork__placeholder"></div>
+                      </div>
+                    </article>
+
+                    <article class="gallery-artwork">
+                      <div class="gallery-artwork__image">
+                        <div class="gallery-artwork__placeholder"></div>
+                      </div>
+                    </article>
+
+                    <article class="gallery-artwork">
+                      <div class="gallery-artwork__image">
+                        <div class="gallery-artwork__placeholder"></div>
+                      </div>
+                    </article>
+
+                    <article class="gallery-artwork">
+                      <div class="gallery-artwork__image">
+                        <div class="gallery-artwork__placeholder"></div>
+                      </div>
+                    </article>
+
+                    <article class="gallery-artwork">
+                      <div class="gallery-artwork__image">
+                        <div class="gallery-artwork__placeholder"></div>
+                      </div>
+                    </article>
+
+                  </div>
+
+                  </section>
+
+
+              <!-- ══ OTHER ══ -->
+
+              <section
+                class="gallery-category"
+                id="other-art">
+
+                <header class="gallery-category__header">
+
+                  <span class="gallery-category__number">
+                    VI
+                  </span>
+
+                  <div>
+                    <p class="eyebrow">
+                      VI · Collection
+                    </p>
+
+                    <h2>
+                      Other
+                    </h2>
+                  </div>
+
+                </header>
+                <div class="gallery-grid">
+
+                  <article class="gallery-artwork">
+                    <div class="gallery-artwork__image">
+                      <div class="gallery-artwork__placeholder"></div>
+                    </div>
+                  </article>
+
+                  <article class="gallery-artwork">
+                    <div class="gallery-artwork__image">
+                      <div class="gallery-artwork__placeholder"></div>
+                    </div>
+                  </article>
+
+                  <article class="gallery-artwork">
+                    <div class="gallery-artwork__image">
+                      <div class="gallery-artwork__placeholder"></div>
+                    </div>
+                  </article>
+
+                  <article class="gallery-artwork">
+                    <div class="gallery-artwork__image">
+                      <div class="gallery-artwork__placeholder"></div>
+                    </div>
+                  </article>
+
+                  <article class="gallery-artwork">
+                    <div class="gallery-artwork__image">
+                      <div class="gallery-artwork__placeholder"></div>
+                    </div>
+                  </article>
+
+                  <article class="gallery-artwork">
+                    <div class="gallery-artwork__image">
+                      <div class="gallery-artwork__placeholder"></div>
+                    </div>
+                  </article>
+
+                  <article class="gallery-artwork">
+                    <div class="gallery-artwork__image">
+                      <div class="gallery-artwork__placeholder"></div>
+                    </div>
+                  </article>
+
+                  <article class="gallery-artwork">
+                    <div class="gallery-artwork__image">
+                      <div class="gallery-artwork__placeholder"></div>
+                    </div>
+                  </article>
+
+                </div>
+
+
+
+              </section>
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+
+
+    <!-- ══ FOOTER ══ -->
+
+    <footer class="site-footer">
+
+      <div class="container">
+
+        <div class="footer__bottom">
+
+          <div
+            class="footer__rule"
+            aria-hidden="true"></div>
+
+          <div class="footer__bottom-row">
+
+            <p>
+              © MMXXV Nocturna — The Cult of Thought.
+            </p>
+
+            <p class="footer__motto">
+              ✦ Per Aspera Ad Astra ✦
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+    <!-- ══ VISOR DE OBRA ══ -->
+    <div
+      class="gallery-lightbox"
+      id="gallery-lightbox"
+      aria-hidden="true">
+
+      <button
+        class="gallery-lightbox__close"
+        type="button"
+        aria-label="Cerrar imagen">
+        ×
+      </button>
+
+      <img
+        class="gallery-lightbox__image"
+        src=""
+        alt="" />
+
+    </div>
+
+    <script>
+  const lightbox = document.getElementById('gallery-lightbox');
+  const lightboxImage = lightbox.querySelector('.gallery-lightbox__image');
+  const lightboxClose = lightbox.querySelector('.gallery-lightbox__close');
+
+  const artworks = document.querySelectorAll('.gallery-artwork');
+
+
+  function openLightbox(artwork) {
+    const image = artwork.querySelector('img');
+
+    if (!image) return;
+
+    lightboxImage.src = image.src;
+    lightboxImage.alt = image.alt;
+
+    lightbox.classList.add('is-open');
+    lightbox.setAttribute('aria-hidden', 'false');
+
+    document.body.style.overflow = 'hidden';
+  }
+
+
+  function closeLightbox() {
+    lightbox.classList.remove('is-open');
+    lightbox.setAttribute('aria-hidden', 'true');
+
+    lightboxImage.src = '';
+    lightboxImage.alt = '';
+
+    document.body.style.overflow = '';
+  }
+
+
+  artworks.forEach((artwork) => {
+
+    artwork.addEventListener('click', (event) => {
+
+      if (event.target.closest('.gallery-lightbox__info')) {
+        return;
+      }
+
+      openLightbox(artwork);
+
+    });
+
+  });
+
+
+  lightboxClose.addEventListener('click', closeLightbox);
+
+
+  lightbox.addEventListener('click', (event) => {
+
+    if (event.target === lightbox) {
+      closeLightbox();
+    }
+
+  });
+
+
+  document.addEventListener('keydown', (event) => {
+
+    if (event.key === 'Escape') {
+      closeLightbox();
+    }
+
+  });
+</script>
+
+
+  </body>
+</html>
