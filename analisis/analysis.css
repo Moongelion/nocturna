@@ -1,0 +1,264 @@
+/* ══════════════════════════════════════
+   PÁGINAS DE ANÁLISIS
+   ══════════════════════════════════════ */
+
+.analysis-page {
+  padding: 150px 0 120px;
+}
+
+
+/* ══ CABECERA ══ */
+
+.analysis-header {
+  width: min(900px, 90vw);
+  margin: 0 0 70px;
+  transform: translateX(-200px);
+}
+
+.analysis-header__meta {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  margin-bottom: 24px;
+
+  font-family: var(--ff-display);
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+
+  color: var(--gold);
+}
+
+.analysis-header__meta::after {
+  content: "";
+
+  width: 70px;
+  height: 1px;
+
+  background: rgba(198, 166, 94, 0.4);
+}
+
+.analysis-header h1 {
+  margin: 0;
+
+  font-family: var(--ff-display);
+  font-size: clamp(3.2rem, 6vw, 6rem);
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: 0.02em;
+
+  color: var(--t-primary);
+}
+
+.analysis-header__artist {
+  margin: 22px 0 4px;
+
+  font-family: var(--ff-display);
+  font-size: 1.15rem;
+  letter-spacing: 0.08em;
+
+  color: var(--gold);
+}
+
+.analysis-header__date {
+  margin: 0;
+
+  font-family: var(--ff-body);
+  font-size: 0.82rem;
+  font-style: italic;
+
+  color: var(--t-muted);
+}
+
+
+/* ══ OBRA PRINCIPAL ══ */
+
+.analysis-hero {
+  width: min(500px, 92vw);
+
+  margin: 0 auto 120px;
+
+  padding: 14px;
+
+  border: 1px solid rgba(198, 166, 94, 0.28);
+
+  background:
+    rgba(8, 7, 12, 0.75);
+}
+
+.analysis-hero img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  object-fit: contain;
+}
+
+
+/* ══ CONTENIDO ══ */
+
+.analysis-content {
+  width: min(900px, 90vw);
+
+  margin: 0 auto;
+}
+/* ══ SECCIONES DEL ANÁLISIS ══ */
+
+.analysis-section {
+  padding: 85px 0;
+
+  border-top: 1px solid rgba(198, 166, 94, 0.2);
+}
+
+.analysis-section:first-child {
+  border-top: 0;
+}
+
+
+/* ══ ETIQUETA DE SECCIÓN ══ */
+
+.analysis-section__label {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  margin-bottom: 22px;
+
+  font-family: var(--ff-display);
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+
+  color: var(--gold);
+}
+
+.analysis-section__label span:first-child {
+  font-size: 0.72rem;
+}
+
+.analysis-section__label::after {
+  content: "";
+
+  width: 55px;
+  height: 1px;
+
+  background: rgba(198, 166, 94, 0.35);
+}
+
+
+.analysis-section h2 {
+  max-width: 700px;
+
+  margin: 0 0 30px;
+
+  font-family: var(--ff-display);
+  font-size: clamp(2rem, 3vw, 3rem);
+  font-weight: 400;
+  line-height: 1.1;
+
+  color: var(--t-primary);
+}
+
+
+.analysis-section p {
+  max-width: 720px;
+
+  margin: 0 0 24px;
+
+  font-family: var(--ff-body);
+  font-size: 1.12rem;
+  line-height: 1.95;
+
+  color: var(--t-secondary);
+}
+
+.analysis-section p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ══ FICHA ══ */
+
+.analysis-ficha {
+  padding: 80px 0 20px;
+
+  border-top: 1px solid rgba(198, 166, 94, 0.2);
+}
+
+.analysis-ficha__grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 0;
+
+  margin-top: 35px;
+
+  border-top: 1px solid rgba(198, 166, 94, 0.15);
+}
+
+.analysis-ficha__grid div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  padding: 22px 24px;
+
+  border-bottom: 1px solid rgba(198, 166, 94, 0.15);
+}
+
+.analysis-ficha__grid div:nth-child(odd) {
+  border-right: 1px solid rgba(198, 166, 94, 0.15);
+}
+
+.analysis-ficha__grid span {
+  font-family: var(--ff-display);
+  font-size: 0.62rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+
+  color: var(--gold);
+}
+
+.analysis-ficha__grid strong {
+  font-family: var(--ff-body);
+  font-size: 0.9rem;
+  font-weight: 400;
+
+  color: var(--t-secondary);
+}
+
+/* ══ INDICADOR DE DESCENSO ══ */
+
+.analysis-scroll-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s1);
+
+  margin: 0 auto 70px;
+}
+
+.analysis-scroll-line {
+  width: 1px;
+  height: 52px;
+
+  background: linear-gradient(
+    to bottom,
+    var(--gold),
+    transparent
+  );
+
+  animation: scroll-pulse 2.2s ease-in-out infinite;
+}
+
+.analysis-scroll-text {
+  font-family: var(--ff-display);
+  font-size: 0.52rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+
+  color: var(--t-muted);
+}
