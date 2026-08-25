@@ -21,7 +21,7 @@ const libraryCollections = [
         description:
           "An examination of the limits of human knowledge, reason and the conditions that make experience possible.",
         tags: ["Philosophy", "Epistemology"],
-        image: ""
+        image: "coverbooks/critique.jpg",
       },
 
       {
@@ -31,7 +31,7 @@ const libraryCollections = [
         description:
           "A foundational meditation on reason, method and the search for certainty through disciplined thought.",
         tags: ["Philosophy", "Rationalism"],
-        image: ""
+        image: "coverbooks/method.jpg"
       },
 
       {
@@ -41,7 +41,7 @@ const libraryCollections = [
         description:
           "A study of human nature, political authority and the foundations of social order.",
         tags: ["Philosophy", "Political Thought"],
-        image: ""
+        image: "coverbooks/leviathan.jpg"
       },
 
 
@@ -53,7 +53,7 @@ const libraryCollections = [
         description:
           "An exploration of absurdity, freedom and the question of whether life can remain meaningful without absolute answers.",
         tags: ["Absurdism", "Existential"],
-        image: ""
+        image: "coverbooks/sisyphus.jpg"
       },
 
       {
@@ -63,7 +63,7 @@ const libraryCollections = [
         description:
           "A dark philosophical investigation into desire, suffering, perception and the nature of reality.",
         tags: ["Metaphysics", "Philosophy"],
-        image: ""
+        image: "coverbooks/theworld.jpg"
       },
 
       {
@@ -73,7 +73,7 @@ const libraryCollections = [
         description:
           "Fragments of thought, observation and self-examination gathered into one of the foundations of modern reflective writing.",
         tags: ["Reflection", "Humanism"],
-        image: ""
+        image: "coverbooks/essais.jpg"
       }
 
     ]
@@ -94,7 +94,7 @@ const libraryCollections = [
         description:
           "Mystery, heresy and a medieval library become a labyrinth of knowledge, silence and hidden violence.",
         tags: ["Mystery", "Medieval"],
-        image: ""
+        image: "coverbooks/rosa.jpg"
       },
 
       {
@@ -104,7 +104,7 @@ const libraryCollections = [
         description:
           "A decaying house, a fragile mind and an atmosphere where architecture and madness become indistinguishable.",
         tags: ["Gothic", "Horror"],
-        image: ""
+        image: "coverbooks/usher.jpg"
       },
 
       {
@@ -114,7 +114,7 @@ const libraryCollections = [
         description:
           "Creation, isolation and responsibility converge in one of literature's most enduring explorations of the monstrous.",
         tags: ["Gothic", "Science"],
-        image: ""
+        image: "coverbooks/frankenstein.webp"
       },
 
       {
@@ -124,7 +124,7 @@ const libraryCollections = [
         description:
           "Beauty, corruption and the desire to escape the consequences of one's own actions.",
         tags: ["Gothic", "Decadence"],
-        image: ""
+        image: "coverbooks/dorian.jpg"
       },
 
       {
@@ -134,7 +134,7 @@ const libraryCollections = [
         description:
           "A strange collision of satire, metaphysics, love and the supernatural unfolding beneath an ordinary city.",
         tags: ["Satire", "Mystical"],
-        image: ""
+        image: "coverbooks/themaster.jpg"
       },
 
       {
@@ -144,7 +144,7 @@ const libraryCollections = [
         description:
           "A man becomes trapped inside an incomprehensible system whose rules remain permanently beyond his reach.",
         tags: ["Absurdism", "Dark"],
-        image: ""
+        image: "coverbooks/thetrial.jpg"
       }
 
     ]

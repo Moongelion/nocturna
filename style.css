@@ -2989,7 +2989,11 @@ background: linear-gradient(
   position: relative;
   z-index: 1;
 
+  width: min(1780px, calc(100% - 80px));
   max-width: 1780px;
+
+  margin-inline: auto;
+
   padding-inline: 0;
 }
 
@@ -3065,7 +3069,7 @@ background: linear-gradient(
 
   padding-top: 0;
 
-  transform: translateX(-100px);
+  transform: none;
 }
 
 .gallery-page__sidebar-label {
@@ -3487,6 +3491,7 @@ background: linear-gradient(
     gap: var(--s3);
   }
 
+
   .gallery-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -3665,3 +3670,5 @@ background: linear-gradient(
   color: var(--gold);
   background: rgba(20, 16, 25, 0.9);
 }
+
+/* ══ LATERAL MENU ADJUSTMENT */
