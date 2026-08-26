@@ -1387,6 +1387,8 @@ h3 {
   letter-spacing: 0.08em;
 }
 
+
+
 /* ═══════════════════════════════════════════════════════
    MÚSICA
    ═══════════════════════════════════════════════════════ */
@@ -3671,4 +3673,17 @@ background: linear-gradient(
   background: rgba(20, 16, 25, 0.9);
 }
 
-/* ══ LATERAL MENU ADJUSTMENT */
+/* ══ SCROLL INDICATOR ══ */
+
+.gallery-scroll-wrapper {
+  position: relative;
+  height: 95px;
+}
+
+.gallery-scroll-wrapper .hero__scroll {
+  position: absolute;
+  top: 0;
+  bottom: auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
