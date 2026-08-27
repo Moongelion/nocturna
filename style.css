@@ -3687,3 +3687,313 @@ background: linear-gradient(
   left: 50%;
   transform: translateX(-50%);
 }
+
+
+
+
+
+
+
+/* ═══════════════════════════════════════════════
+   NOCTURNA · SECTION GRADIENT BACKGROUNDS
+   ═══════════════════════════════════════════════ */
+
+.section-bg--gradient {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+
+  background:
+    radial-gradient(
+      ellipse at 50% 20%,
+      rgba(113, 53, 160, 0.07),
+      transparent 48%
+    ),
+    linear-gradient(
+      to bottom,
+      #09080e 0%,
+      #101018 48%,
+      #09080e 100%
+    );
+}
+
+
+/* Slightly different atmosphere for the Archives */
+
+.archivos .section-bg--gradient {
+  background:
+    radial-gradient(
+      ellipse at 50% 35%,
+      rgba(113, 53, 160, 0.06),
+      transparent 50%
+    ),
+    linear-gradient(
+      to bottom,
+      #09080e 0%,
+      #111019 50%,
+      #09080e 100%
+    );
+}
+
+
+/* Gallery */
+
+.galeria .section-bg--gradient {
+  background:
+    linear-gradient(
+      to bottom,
+      #09080e 0%,
+      #101018 50%,
+      #09080e 100%
+    );
+}
+
+
+/* Music */
+
+.musica .section-bg--gradient {
+  background:
+    radial-gradient(
+      ellipse at 70% 45%,
+      rgba(113, 53, 160, 0.08),
+      transparent 48%
+    ),
+    linear-gradient(
+      105deg,
+      #09080e 0%,
+      #101018 55%,
+      #09080e 100%
+    );
+}
+
+
+/* Chamber */
+
+.camara .section-bg--gradient {
+  background:
+    radial-gradient(
+      ellipse at 50% 40%,
+      rgba(113, 53, 160, 0.06),
+      transparent 50%
+    ),
+    linear-gradient(
+      to bottom,
+      #09080e 0%,
+      #101018 50%,
+      #09080e 100%
+    );
+}
+
+
+/* FAQ */
+
+.faq .section-bg--gradient {
+  background:
+    radial-gradient(
+      ellipse at 30% 50%,
+      rgba(113, 53, 160, 0.055),
+      transparent 45%
+    ),
+    linear-gradient(
+      to bottom,
+      #09080e 0%,
+      #101018 50%,
+      #09080e 100%
+    );
+}
+
+
+/* Newsletter */
+
+.newsletter .section-bg--gradient {
+  background:
+    radial-gradient(
+      ellipse at center,
+      rgba(123, 63, 160, 0.12) 0%,
+      transparent 65%
+    ),
+    linear-gradient(
+      to bottom,
+      #09080e,
+      #101018,
+      #09080e
+    );
+}
+
+
+/* Footer */
+
+.site-footer__bg--gradient {
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(
+      ellipse at 50% 20%,
+      rgba(113, 53, 160, 0.06),
+      transparent 55%
+    ),
+    linear-gradient(
+      to bottom,
+      #09080e 0%,
+      #101018 50%,
+      #09080e 100%
+    );
+}
+
+
+/* ═══════════════════════════════════════════════
+   NOCTURNA · CONTINUOUS SECTION BACKGROUNDS
+   ═══════════════════════════════════════════════ */
+
+/* Remove the old photographic background behavior */
+
+.section-bg--gradient {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+
+  background: transparent !important;
+
+  opacity: 1 !important;
+}
+
+
+/* Every major section shares the same base */
+
+.manifiesto,
+.archivos,
+.galeria,
+.musica,
+.biblioteca,
+.camara,
+.faq,
+.newsletter {
+  position: relative;
+
+  background:
+    linear-gradient(
+      to bottom,
+      #09080e 0%,
+      #0b0a11 50%,
+      #09080e 100%
+    );
+}
+
+
+/* Remove any visual separation between sections */
+
+.manifiesto,
+.archivos,
+.galeria,
+.musica,
+.biblioteca,
+.camara,
+.faq,
+.newsletter {
+  border: none !important;
+}
+
+
+/* Very subtle atmospheric variation */
+
+.manifiesto {
+  background:
+    radial-gradient(
+      ellipse at 50% 35%,
+      rgba(113, 53, 160, 0.035),
+      transparent 55%
+    ),
+    #09080e;
+}
+
+.archivos {
+  background:
+    radial-gradient(
+      ellipse at 50% 45%,
+      rgba(113, 53, 160, 0.045),
+      transparent 60%
+    ),
+    #09080e;
+}
+
+.galeria {
+  background:
+    linear-gradient(
+      to bottom,
+      #09080e,
+      #0b0a11,
+      #09080e
+    );
+}
+
+.musica {
+  background:
+    radial-gradient(
+      ellipse at 65% 45%,
+      rgba(113, 53, 160, 0.055),
+      transparent 60%
+    ),
+    #09080e;
+}
+
+.biblioteca {
+  background:
+    radial-gradient(
+      ellipse at 40% 40%,
+      rgba(113, 53, 160, 0.035),
+      transparent 60%
+    ),
+    #09080e;
+}
+
+.camara {
+  background:
+    radial-gradient(
+      ellipse at 50% 35%,
+      rgba(113, 53, 160, 0.045),
+      transparent 60%
+    ),
+    #09080e;
+}
+
+.faq {
+  background:
+    radial-gradient(
+      ellipse at 30% 50%,
+      rgba(113, 53, 160, 0.035),
+      transparent 60%
+    ),
+    #09080e;
+}
+
+.newsletter {
+  background:
+    radial-gradient(
+      ellipse at 50% 45%,
+      rgba(113, 53, 160, 0.07),
+      transparent 65%
+    ),
+    #09080e;
+}
+
+
+/* Make sure the content stays above the background */
+
+.manifiesto > .container,
+.archivos > .container,
+.galeria > .container,
+.musica > .container,
+.biblioteca > .container,
+.camara > .container,
+.faq > .container,
+.newsletter > .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Kill the old section background */
+
+.section-bg {
+  display: none !important;
+}

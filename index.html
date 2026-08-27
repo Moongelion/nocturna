@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -21,7 +21,7 @@
       rel="stylesheet" />
   </head>
   <body>
-    <!-- ! quitar cursor en en movimiento -->
+    <!-- ! remove moving cursor -->
   <div class="cursor-dot"  id="cursor-dot"  aria-hidden="true"></div>
   <div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
 
@@ -33,7 +33,7 @@
         <a
           href="#hero"
           class="header__logo"
-          aria-label="Nocturna — inicio">
+          aria-label="Nocturna — home">
           <img
             src="assets/finalogo.png"
             alt=""
@@ -45,13 +45,13 @@
         <nav
           class="header__nav"
           id="main-nav"
-          aria-label="Navegación principal">
+          aria-label="Main navigation">
           <ul class="nav__list">
             <li class="nav__item">
               <a
                 href="#manifiesto"
                 class="nav__link"
-                >Manifiesto</a
+                >Manifesto</a
               >
             </li>
             <li class="nav__item nav__item--has-dropdown">
@@ -60,7 +60,7 @@
                 aria-haspopup="true"
                 aria-expanded="false"
                 id="archivos-btn">
-                Archivos
+                Archives
                 <svg
                   class="nav__chevron"
                   viewBox="0 0 12 7"
@@ -83,7 +83,7 @@
                     href="#galeria"
                     class="nav__dropdown-link"
                     role="menuitem"
-                    >✦ La Galería</a
+                    >✦ The Gallery</a
                   >
                 </li>
                 <li role="none">
@@ -91,7 +91,7 @@
                     href="#musica"
                     class="nav__dropdown-link"
                     role="menuitem"
-                    >✦ La Música</a
+                    >✦ Music</a
                   >
                 </li>
                 <li role="none">
@@ -99,7 +99,7 @@
                     href="#biblioteca"
                     class="nav__dropdown-link"
                     role="menuitem"
-                    >✦ La Biblioteca</a
+                    >✦ The Library</a
                   >
                 </li>
               </ul>
@@ -108,7 +108,7 @@
               <a
                 href="#camara"
                 class="nav__link"
-                >La Cámara</a
+                >The Chamber</a
               >
             </li>
           </ul>
@@ -118,14 +118,14 @@
           <a
             href="#newsletter"
             class="btn btn--ghost-gold btn--sm"
-            >Suscripción al Códice</a
+            >Subscribe to the Codex</a
           >
         </div>
 
         <button
           class="nav-toggle"
           id="nav-toggle"
-          aria-label="Abrir menú"
+          aria-label="Open menu"
           aria-expanded="false"
           aria-controls="main-nav">
           <span></span><span></span><span></span>
@@ -163,7 +163,7 @@
         <div class="hero__content">
           <div class="hero__badge">
             <span class="hero__badge-line"></span>
-            <span class="hero__badge-text">Est. Anno Domini MMXXV</span>
+            <span class="hero__badge-text">Est. Anno Domini MMXXVII</span>
             <span class="hero__badge-line"></span>
           </div>
           <h1 class="hero__title">Nocturna</h1>
@@ -174,7 +174,7 @@
             <span></span><em>◆</em><span></span>
           </div>
           <p class="hero__desc">
-            Un santuario para los que buscan más allá del velo.<br />
+            A sanctuary for those who seek beyond the veil.<br />
             Arte, filosofía, música y los grandes misterios del conocimiento
             humano.
           </p>
@@ -182,12 +182,12 @@
             <a
               href="#manifiesto"
               class="btn btn--primary btn--lg"
-              >Leer el Manifiesto</a
+              >Leer el Manifesto</a
             >
             <a
               href="#archivos"
               class="btn btn--outline-dim btn--lg"
-              >Explorar Archivos</a
+              >Explorar Archives</a
             >
           </div>
         </div>
@@ -195,34 +195,27 @@
           class="hero__scroll"
           aria-hidden="true">
           <div class="hero__scroll-line"></div>
-          <span>Descender</span>
+          <span>Descend</span>
         </div>
       </section>
 
-      <!-- ══ MANIFIESTO ══ -->
+      <!-- ══ MANIFESTO ══ -->
       <section
         class="manifiesto"
         id="manifiesto">
-        <div
-          class="section-bg"
-          aria-hidden="true">
-          <img
-            src="assets/SEGUNDO.png"
-            alt="" />
-          <div class="section-bg__mask section-bg__mask--manifiesto"></div>
-        </div>
+        <div class="section-bg section-bg--gradient" aria-hidden="true"></div>
         <div class="container">
           <div class="manifiesto__grid">
             <aside
               class="manifiesto__aside"
               aria-hidden="true">
-              <p class="aside-label">I · Manifiesto</p>
+              <p class="aside-label">I · Manifesto</p>
               <div class="aside-line"></div>
             </aside>
             <div class="manifiesto__body">
               <header class="section-header">
-                <p class="eyebrow">I. El Origen</p>
-                <h2>Contra el Ruido.<br />Por el Pensamiento.</h2>
+                <p class="eyebrow">I. The Origin</p>
+                <h2>Against the Noise.<br />For Thought.</h2>
               </header>
               <blockquote class="pull-quote">
                 Vivimos en una era de destellos efímeros. La cultura ha sido
@@ -243,7 +236,7 @@
                 <a
                   href="manifiesto.html"
                   class="btn btn--primary btn--arrow">
-                  Leer el Manifiesto Completo
+                  Leer el Manifesto Completo
                   <svg
                     class="btn__arrow-svg"
                     viewBox="0 0 24 24"
@@ -262,147 +255,149 @@
               <div class="stat-card">
                 <span class="stat-card__n">XII</span>
                 <span class="stat-card__rule"></span>
-                <span class="stat-card__l">Principios del Códice</span>
+                <span class="stat-card__l">Principles of the Codex</span>
                 <template class="stat-modal-template">
                   <section>
-                    <h3>I. Contra la velocidad.</h3>
-                    <p>La contemplación exige tiempo.</p>
+                    <h3>I. Against Speed.</h3>
+                    <p>Contemplation requires time.</p>
                   </section>
                   <section>
-                    <h3>II. Contra el consenso.</h3>
-                    <p>Pensar comienza donde termina la obediencia.</p>
+                    <h3>II. Against Consensus.</h3>
+                    <p>Thinking begins where obedience ends.</p>
                   </section>
                   <section>
-                    <h3>III. Contra el olvido.</h3>
-                    <p>Lo que una época abandona no pierde necesariamente su valor.</p>
+                    <h3>III. Against Forgetting.</h3>
+                    <p>What an age abandons does not necessarily lose its value.</p>
                   </section>
                   <section>
-                    <h3>IV. Contra la superficie.</h3>
-                    <p>Toda obra digna exige una segunda mirada.</p>
+                    <h3>IV. Against the Surface.</h3>
+                    <p>Every worthy work demands a second look.</p>
                   </section>
                   <section>
-                    <h3>V. La dificultad importa.</h3>
-                    <p>No todo lo valioso debe ser fácil.</p>
+                    <h3>V. Difficulty Matters.</h3>
+                    <p>Not everything valuable must be easy.</p>
                   </section>
                   <section>
-                    <h3>VI. Pensar antes de consumir.</h3>
-                    <p>La cultura debe transformar, no simplemente entretener.</p>
+                    <h3>VI. Think Before Consuming.</h3>
+                    <p>Culture should transform, not merely entertain.</p>
                   </section>
                   <section>
-                    <h3>VII. La belleza no necesita utilidad.</h3>
+                    <h3>VII. Beauty Needs No Utility.</h3>
                   </section>
                   <section>
-                    <h3>VIII. La duda es una disciplina.</h3>
+                    <h3>VIII. Doubt Is a Discipline.</h3>
                   </section>
                   <section>
-                    <h3>IX. Interpretar también es crear.</h3>
+                    <h3>IX. To Interpret Is Also to Create.</h3>
                   </section>
                   <section>
-                    <h3>X. El pensamiento debe incomodar.</h3>
+                    <h3>X. Thought Should Disturb.</h3>
                   </section>
                   <section>
-                    <h3>XI. Conservar es resistir.</h3>
+                    <h3>XI. To Preserve Is to Resist.</h3>
                   </section>
                   <section>
-                    <h3>XII. Buscar lo que permanece.</h3>
+                    <h3>XII. Seek What Remains.</h3>
                   </section>
                 </template>
               </div>
               <div class="stat-card">
                 <span class="stat-card__n">∞</span>
                 <span class="stat-card__rule"></span>
-                <span class="stat-card__l">Obras Analizadas</span>
+                <span class="stat-card__l">Works Analyzed</span>
                 <template class="stat-modal-template">
                   <section>
-                    <h3>Una obra no termina en su autor.</h3>
-                    <p>También pertenece a quienes vuelven a mirarla.</p>
+                    <h3>A work does not end with its author.</h3>
+                    <p>It also belongs to those who return to look at it.</p>
                   </section>
 
                   <section>
-                    <h3>El contexto importa.</h3>
-                    <p>Ninguna obra existe fuera de su tiempo.</p>
+                    <h3>Context matters.</h3>
+                    <p>No work exists outside its time.</p>
                   </section>
 
                   <section>
-                    <h3>Mirar no es comprender.</h3>
-                    <p>Toda contemplación exige una lectura más profunda.</p>
+                    <h3>Looking is not understanding.</h3>
+                    <p>Every act of contemplation demands a deeper reading.</p>
                   </section>
 
                   <section>
-                    <h3>La belleza también puede perturbar.</h3>
-                    <p>No todo lo bello debe resultar confortable.</p>
+                    <h3>Beauty can also disturb.</h3>
+                    <p>Not everything beautiful should be comfortable.</p>
                   </section>
 
                   <section>
-                    <h3>El símbolo permanece.</h3>
-                    <p>Una imagen puede sobrevivir a la época que la creó.</p>
+                    <h3>The symbol remains.</h3>
+                    <p>An image can outlive the age that created it.</p>
                   </section>
 
                   <section>
-                    <h3>Interpretar es tomar posición.</h3>
-                    <p>Toda mirada revela tanto al observador como a la obra.</p>
+                    <h3>To interpret is to take a position.</h3>
+                    <p>Every gaze reveals as much about the observer as it does about the work.</p>
                   </section>
                 </template>
               </div>
               <div class="stat-card">
                 <span class="stat-card__n">I</span>
                 <span class="stat-card__rule"></span>
-                <span class="stat-card__l">Culto. El Pensamiento.</span>
+                <span class="stat-card__l">The Cult of Thought.</span>
                 <template class="stat-modal-template">
                   <section>
-                    <h3>Pensar es resistir.</h3>
-                    <p>Frente al ruido, conservar la capacidad de detenerse.</p>
+                    <h3>To think is to resist.</h3>
+                    <p>Against the noise, preserve the ability to stop.</p>
                   </section>
 
                   <section>
-                    <h3>Leer es atravesar.</h3>
-                    <p>Una gran obra no se consume: se habita.</p>
+                    <h3>To read is to cross through.</h3>
+                    <p>A great work is not consumed: it is inhabited.</p>
                   </section>
 
                   <section>
-                    <h3>La curiosidad no se domestica.</h3>
-                    <p>Preguntar es negarse a aceptar respuestas heredadas.</p>
+                    <h3>Curiosity cannot be domesticated.</h3>
+                    <p>To ask is to refuse inherited answers.</p>
                   </section>
 
                   <section>
-                    <h3>La cultura no es decoración.</h3>
-                    <p>Es una forma de comprender y transformar el mundo.</p>
+                    <h3>Culture is not decoration.</h3>
+                    <p>It is a way of understanding and transforming the world.</p>
                   </section>
 
                   <section>
-                    <h3>La soledad también piensa.</h3>
-                    <p>No todo silencio necesita ser llenado.</p>
+                    <h3>Solitude thinks too.</h3>
+                    <p>Not every silence needs to be filled.</p>
                   </section>
 
                   <section>
-                    <h3>El pensamiento permanece.</h3>
-                    <p>Cuando el ruido desaparece, quedan las preguntas.</p>
+                    <h3>Thought remains.</h3>
+                    <p>When the noise disappears, the questions remain.</p>
                   </section>
                 </template>
               </div>
             </div>
           </div>
         </div>
+                <div
+                  class="hero__particles"
+                  aria-hidden="true">
+                  <span class="particle p1">✦</span>
+                  <span class="particle p2">✧</span>
+                  <span class="particle p3">✦</span>
+                  <span class="particle p4">✧</span>
+                  <span class="particle p5">✦</span>
+                </div
       </section>
 
-      <!-- ══ ARCHIVOS — TRES CÁMARAS ══ -->
+      <!-- ══ ARCHIVES — THREE CHAMBERS ══ -->
       <section
         class="archivos"
         id="archivos">
-        <div
-          class="section-bg"
-          aria-hidden="true">
-          <img
-            src="assets/TERCE.png"
-            alt="" />
-          <div class="section-bg__mask section-bg__mask--archivos"></div>
-        </div>
+        <div class="section-bg section-bg--gradient" aria-hidden="true"></div>
         <div class="container">
           <header class="section-header section-header--center">
-            <p class="eyebrow">II. Los Archivos</p>
-            <h2>Las Tres Cámaras<br />del Conocimiento</h2>
+            <p class="eyebrow">II. Los Archives</p>
+            <h2>The Three Chambers<br />of Knowledge</h2>
             <p class="section-sub">
-              Explora las salas donde guardamos lo que el tiempo no debe borrar.
+              Explore the rooms where we keep what time must not erase.
             </p>
           </header>
             <ul class="chambers">
@@ -413,7 +408,7 @@
                   <div class="chamber__img-wrap">
                     <img
                       src="assets/GALLERYSECT.png"
-                      alt="La Galería"
+                      alt="The Gallery"
                       loading="lazy" />
                     <div class="chamber__img-overlay"></div>
                   </div>
@@ -423,12 +418,12 @@
                       aria-hidden="true"
                       >🖼</span
                     >
-                    <h3>La Galería</h3>
+                    <h3>The Gallery</h3>
                     <p>
                       Obras maestras comentadas. De los prerrafaelitas al
                       simbolismo más oscuro.
                     </p>
-                    <span class="chamber__cta">Entrar a la sala →</span>
+                    <span class="chamber__cta">Enter the chamber →</span>
                   </div>
                   <div
                     class="chamber__corners"
@@ -442,7 +437,7 @@
                   <div class="chamber__img-wrap">
                     <img
                       src="assets/MUSIC.jpg"
-                      alt="La Música"
+                      alt="Music"
                       loading="lazy" />
                     <div class="chamber__img-overlay"></div>
                   </div>
@@ -452,12 +447,12 @@
                       aria-hidden="true"
                       >♩</span
                     >
-                    <h3>La Música</h3>
+                    <h3>Music</h3>
                     <p>
                       Desde Bach hasta el doom metal. La música como portal a lo
                       inefable.
                     </p>
-                    <span class="chamber__cta">Entrar a la sala →</span>
+                    <span class="chamber__cta">Enter the chamber →</span>
                   </div>
                   <div
                     class="chamber__corners"
@@ -471,7 +466,7 @@
                   <div class="chamber__img-wrap">
                     <img
                       src="assets/biblio.png"
-                      alt="La Biblioteca"
+                      alt="The Library"
                       loading="lazy" />
                     <div class="chamber__img-overlay"></div>
                   </div>
@@ -483,12 +478,12 @@
                         src="assets/hd-open-book-white-icon-symbol-transparent-background-701751695033476xelmcdrhf9.png"
                         alt="" />
                     </span>
-                    <h3>La Biblioteca</h3>
+                    <h3>The Library</h3>
                     <p>
                       Filosofía, ocultismo, literatura maldita. Los libros que
                       transforman mentes.
                     </p>
-                    <span class="chamber__cta">Entrar a la sala →</span>
+                    <span class="chamber__cta">Enter the chamber →</span>
                   </div>
                   <div
                     class="chamber__corners"
@@ -497,46 +492,49 @@
               </li>
             </ul>
         </div>
+                <div
+                  class="hero__particles"
+                  aria-hidden="true">
+                  <span class="particle p1">✦</span>
+                  <span class="particle p2">✧</span>
+                  <span class="particle p3">✦</span>
+                  <span class="particle p4">✧</span>
+                  <span class="particle p5">✦</span>
+                </div
+        
       </section>
 
-      <!-- ══ LA GALERÍA ══ -->
+      <!-- ══ THE GALLERY ══ -->
       <section
         class="galeria"
         id="galeria">
-        <div
-          class="section-bg"
-          aria-hidden="true">
-          <img
-            src="assets/quinta.png"
-            alt="" />
-          <div class="section-bg__mask section-bg__mask--galeria"></div>
-        </div>
+        <div class="section-bg section-bg--gradient" aria-hidden="true"></div>
         <div class="container">
           <div class="section-header-row">
             <header class="section-header">
-              <p class="eyebrow">La Galería Nocturna</p>
-              <h2>Arte que Perturba</h2>
+              <p class="eyebrow">The Gallery Nocturna</p>
+              <h2>Art That Disturbs</h2>
             </header>
             <a
             href="gallery.html"
             class="btn btn--ghost-gold"
-            >Ver toda la Galería</a
+            >View the Full Gallery</a
             >
           </div>
 
-          <!-- Pared de cuadros -->
+          <!-- Wall of paintings -->
           <div class="gallery-wall-wrap">
             <img
               src="assets/coleccion.png"
-              alt="La Pared de Cuadros — Colección Permanente Nocturna. Pinturas con marcos dorados barrocos."
+              alt="The Wall of Paintings — Nocturna Permanent Collection. Paintings with gilded Baroque frames."
               class="gallery-wall"
               loading="lazy" />
             <div class="gallery-wall-caption">
-              La Colección Permanente — Temporada 2026
+              The Permanent Collection — 2026 Season
             </div>
           </div>
 
-          <!-- Obra destacada -->
+          <!-- Featured Artwork -->
           <div class="featured-artwork">
             <div class="featured-artwork__frame-wrap">
               <div class="featured-artwork__frame">
@@ -546,11 +544,11 @@
                   loading="lazy" />
               </div>
               <p class="featured-artwork__plaque">
-                <span>01</span> Klimt — El Beso · 1907–08 · Óleo y pan de oro
+                <span>01</span> Klimt — The Kiss · 1907–08 · Oil and gold leaf
               </p>
             </div>
             <div class="featured-artwork__content">
-              <p class="eyebrow">Obra de la semana</p>
+              <p class="eyebrow">Artwork of the Week</p>
               <h3>Gustav Klimt — El Beso</h3>
               <div class="featured-artwork__tags">
                 <span class="tag">Simbolismo</span>
@@ -570,7 +568,7 @@
               <a
                 href="analisis/thekiss.html"
                 class="btn btn--primary btn--arrow">
-                Análisis completo
+                Full Analysis
                 <svg
                   class="btn__arrow-svg"
                   viewBox="0 0 24 24"
@@ -587,7 +585,7 @@
             </div>
           </div>
 
-          <!-- Grid obras -->
+          <!-- Artwork grid -->
           <div class="art-grid">
             <article
               class="art-card"
@@ -599,7 +597,7 @@
                   loading="lazy" />
               </div>
               <div class="art-card__info">
-                <span class="tag">Prerrafaelita</span>
+                <span class="tag">Pre-Raphaelite</span>
                 <h4>Millais — Ophelia</h4>
                 <time>1851–1852</time>
               </div>
@@ -610,12 +608,12 @@
               <div class="art-card__img">
                 <img
                   src="assets/cena.jpg"
-                  alt="Da Vinci — La Última Cena, c.1498"
+                  alt="Da Vinci — The Last Supper, c.1498"
                   loading="lazy" />
               </div>
               <div class="art-card__info">
-                <span class="tag">Renacimiento</span>
-                <h4>Da Vinci — La Última Cena</h4>
+                <span class="tag">Renaissance</span>
+                <h4>Da Vinci — The Last Supper</h4>
                 <time>c. 1498</time>
               </div>
             </article>
@@ -625,12 +623,12 @@
               <div class="art-card__img">
                 <img
                   src="assets/rem.jpeg"
-                  alt="Lección de anatomía del Dr. Nicolaes Tulp"
+                  alt="The Anatomy Lesson of Dr. Nicolaes Tulp"
                   loading="lazy" />
               </div>
               <div class="art-card__info">
-                <span class="tag">Barroco</span>
-                <h4>Lección de anatomía del Dr. Nicolaes Tulp</h4>
+                <span class="tag">Baroque</span>
+                <h4>The Anatomy Lesson of Dr. Nicolaes Tulp</h4>
                 <time>1632</time>
               </div>
             </article>
@@ -644,7 +642,7 @@
                   loading="lazy" />
               </div>
               <div class="art-card__info">
-                <span class="tag">Realismo</span>
+                <span class="tag">Realism</span>
                 <h4>Reply of the Zaporozhian Cossacks</h4>
                 <time>1880-1891</time>
               </div>
@@ -653,18 +651,11 @@
         </div>
       </section>
 
-      <!-- ══ LA MÚSICA ══ -->
+      <!-- ══ MUSIC ══ -->
       <section
         class="musica"
         id="musica">
-        <div
-          class="section-bg"
-          aria-hidden="true">
-          <img
-            src="assets/sexta.png"
-            alt="" />
-          <div class="section-bg__mask section-bg__mask--musica"></div>
-        </div>
+        <div class="section-bg section-bg--gradient" aria-hidden="true"></div>
         <div class="container">
           <div class="musica__layout">
             <div class="musica__player-col">
@@ -685,11 +676,11 @@
                 </div>
               </div>
               <div class="player-widget">
-                <p class="player-widget__label">En reproducción</p>
+                <p class="player-widget__label">Now Playing</p>
                 <p
                   class="player-widget__track"
                   id="pw-track">
-                  Nocturno Op. 9 No. 2
+                  Nocturne Op. 9 No. 2
                 </p>
                 <p
                   class="player-widget__artist"
@@ -705,7 +696,7 @@
                   <button
                     class="pw-btn"
                     id="pw-prev"
-                    aria-label="Anterior">
+                    aria-label="Previous">
                     &#8249;&#8249;
                   </button>
                   <button
@@ -724,7 +715,7 @@
                   <button
                     class="pw-btn"
                     id="pw-next"
-                    aria-label="Siguiente">
+                    aria-label="Next">
                     &#8250;&#8250;
                   </button>
                   <div class="player-widget__volume">
@@ -732,7 +723,7 @@
                     class="player-widget__volume-icon"
                     id="pw-mute"
                     type="button"
-                    aria-label="Silenciar">
+                    aria-label="Mute">
                     <svg
                     viewBox="0 0 24 24"
                     aria-hidden="true">
@@ -754,7 +745,7 @@
                 max="1"
                 step="0.01"
                 value="1"
-                aria-label="Volumen">
+                aria-label="Volume">
               </div>
             </div>
           </div>
@@ -762,8 +753,8 @@
 
             <div class="musica__content-col">
               <header class="section-header">
-                <p class="eyebrow">La Cámara de la Música</p>
-                <h2>Sonidos del Abismo</h2>
+                <p class="eyebrow">The Chamber de la Música</p>
+                <h2>Sounds from the Abyss</h2>
               </header>
               <p class="body-text musica__intro">
                 La música de Nocturna no es entretenimiento. Es ceremonial.
@@ -773,7 +764,7 @@
               <ol
                 class="tracklist"
                 id="tracklist"
-                aria-label="Lista de reproducción">
+                aria-label="Playlist">
                 <li
                   class="tracklist__item tracklist__item--active"
                   data-idx="0"
@@ -782,10 +773,10 @@
                   aria-pressed="true">
                   <span class="tracklist__num">01</span>
                   <div class="tracklist__info">
-                    <span class="tracklist__title">Nocturno Op. 9 No. 2</span>
+                    <span class="tracklist__title">Nocturne Op. 9 No. 2</span>
                     <span class="tracklist__artist">Frédéric Chopin</span>
                   </div>
-                  <span class="tracklist__genre">Piano Romántico</span>
+                  <span class="tracklist__genre">Romantic Piano</span>
                   <span class="tracklist__dur">4:32</span>
                 </li>
                 <li
@@ -796,7 +787,7 @@
                   aria-pressed="false">
                   <span class="tracklist__num">02</span>
                   <div class="tracklist__info">
-                    <span class="tracklist__title">Fantasía en Re menor, K. 397</span>
+                    <span class="tracklist__title">Fantasia in D minor, K. 397</span>
                     <span class="tracklist__artist"
                       >W.A. Mozart</span
                     >
@@ -840,17 +831,17 @@
                   aria-pressed="false">
                   <span class="tracklist__num">05</span>
                   <div class="tracklist__info">
-                    <span class="tracklist__title"> Symphony No9 From The New World</span>
+                    <span class="tracklist__title"> Symphony No. 9 From the New World</span>
                     <span class="tracklist__artist">Antonín Dvořák</span>
                   </div>
-                  <span class="tracklist__genre">Orquesta</span>
+                  <span class="tracklist__genre">Orchestral</span>
                   <span class="tracklist__dur">-</span>
                 </li>
               </ol>
               <a
-                href="#"
+                href="music/music.html"
                 class="btn btn--primary btn--arrow">
-                Explorar toda la Música
+                EXPLORE THE MUSIC LIBRARY
                 <svg
                   class="btn__arrow-svg"
                   viewBox="0 0 24 24"
@@ -869,20 +860,20 @@
         </div>
       </section>
 
-      <!-- ══ LA BIBLIOTECA ══ -->
+      <!-- ══ THE LIBRARY ══ -->
       <section
         class="biblioteca"
         id="biblioteca">
         <div class="container">
           <div class="section-header-row">
             <header class="section-header">
-              <p class="eyebrow">La Biblioteca Nocturna</p>
-              <h2>Libros que No Se Olvidan</h2>
+              <p class="eyebrow">The Library Nocturna</p>
+              <h2>Books That Are Not Forgotten</h2>
             </header>
             <a
               href="library/library.html"
               class="btn btn--ghost-gold"
-              >Ver toda la Biblioteca</a
+              >View the Full Library</a
             >
           </div>
           <div class="bookshelf">
@@ -893,7 +884,7 @@
                 class="book__3d"
                 style="--bk: #3d1a0e">
                 <div class="book__spine-face">
-                  <span>El Nombre de la Rosa</span><span>Eco</span>
+                  <span>The Name of the Rose</span><span>Eco</span>
                 </div>
                 <div class="book__front-face">
                   <img
@@ -901,27 +892,27 @@
                     alt=""
                     class="book__cover-img" />
                   <div class="book__cover-text">
-                    <p>El Nombre de la Rosa</p>
+                    <p>The Name of the Rose</p>
                     <p>Umberto Eco</p>
                   </div>
                 </div>
                 <div class="book__side-face"></div>
               </div>
               <div class="book__meta">
-                <h3>El Nombre de la Rosa</h3>
+                <h3>The Name of the Rose</h3>
                 <p class="book__author">Umberto Eco · 1980</p>
                 <p class="body-text">
                   Misterio, herejía y la biblioteca como laberinto del saber
                   oculto.
                 </p>
                 <div class="book__tags">
-                  <span class="tag">Ficción</span
-                  ><span class="tag">Semiótica</span>
+                  <span class="tag">Fiction</span
+                  ><span class="tag">Semiotics</span>
                 </div>
               </div>
               <template class="book-modal-template">
                 <section>
-                  <h3>Contexto</h3>
+                  <h3>Context</h3>
                   <p>
                     Publicada en 1980, la novela de Umberto Eco combina la tradición
                     de la novela histórica con el misterio y la reflexión filosófica.
@@ -931,7 +922,7 @@
                   </p>
                 </section>
                 <section>
-                  <h3>Argumento</h3>
+                  <h3>Plot</h3>
                   <p>
                     Guillermo de Baskerville y su joven discípulo Adso de Melk llegan
                     a una abadía donde comienzan a producirse una serie de muertes
@@ -941,14 +932,14 @@
                   </p>
                 </section>
                 <section>
-                  <h3>Temas</h3>
+                  <h3>Themes</h3>
                   <p>
                     Fe y razón · conocimiento y poder · herejía · interpretación ·
                     censura · misterio
                   </p>
                 </section>
                 <section>
-                  <h3>Análisis</h3>
+                  <h3>Analysis</h3>
                   <p>
                     La biblioteca funciona como uno de los grandes símbolos de la
                     novela: representa un conocimiento que puede liberar, pero también
@@ -964,7 +955,7 @@
                 class="book__3d"
                 style="--bk: #1a0a2e">
                 <div class="book__spine-face">
-                  <span>Así Habló Zaratustra</span><span>Nietzsche</span>
+                  <span>Thus Spoke Zarathustra</span><span>Nietzsche</span>
                 </div>
                 <div class="book__front-face">
                   <img
@@ -972,14 +963,14 @@
                     alt=""
                     class="book__cover-img" />
                   <div class="book__cover-text">
-                    <p>Así habló Zaratustra</p>
+                    <p>Thus Spoke Zarathustra</p>
                     <p>F. Nietzsche</p>
                   </div>
                 </div>
                 <div class="book__side-face"></div>
               </div>
               <div class="book__meta">
-                <h3>Así habló Zaratustra</h3>
+                <h3>Thus Spoke Zarathustra</h3>
                 <p class="book__author">Friedrich Nietzsche · 1883</p>
                 <p class="body-text">
                   La voluntad de poder y la búsqueda del superhombre a través
@@ -987,14 +978,14 @@
                 </p>
                 <div class="book__tags">
                   <span class="tag">Filosofía</span
-                  ><span class="tag">Existencial</span>
+                  ><span class="tag">Existential</span>
                 </div>
               </div>
               <template class="book-modal-template">
                 <section>
-                  <h3>Contexto</h3>
+                  <h3>Context</h3>
                   <p>
-                    Publicada entre 1883 y 1885, Así habló Zaratustra es una de las
+                    Publicada entre 1883 y 1885, Thus Spoke Zarathustra es una de las
                     obras centrales de Friedrich Nietzsche. El libro adopta la forma
                     de una narración filosófica en la que Zaratustra, después de años
                     de aislamiento, regresa entre los hombres para anunciar una nueva
@@ -1002,7 +993,7 @@
                   </p>
                 </section>
                 <section>
-                  <h3>Argumento</h3>
+                  <h3>Plot</h3>
                   <p>
                     Zaratustra abandona su soledad y comienza a recorrer el mundo
                     transmitiendo sus enseñanzas. A través de discursos, encuentros
@@ -1013,14 +1004,14 @@
                   </p>
                 </section>
                 <section>
-                  <h3>Temas</h3>
+                  <h3>Themes</h3>
                   <p>
                     Superhombre · voluntad de poder · eterno retorno · nihilismo ·
                     transformación · creación de valores
                   </p>
                 </section>
                 <section>
-                  <h3>Análisis</h3>
+                  <h3>Analysis</h3>
                   <p>
                     La obra utiliza deliberadamente un lenguaje poético y simbólico
                     para expresar ideas filosóficas. Zaratustra no pretende ofrecer
@@ -1037,7 +1028,7 @@
                 class="book__3d"
                 style="--bk: #0a1a0e">
                 <div class="book__spine-face">
-                  <span>Paraíso Perdido</span><span>Milton</span>
+                  <span>Paradise Lost</span><span>Milton</span>
                 </div>
                 <div class="book__front-face">
                   <img
@@ -1045,36 +1036,36 @@
                     alt=""
                     class="book__cover-img"/>
                   <div class="book__cover-text">
-                    <p>Paraíso Perdido</p>
+                    <p>Paradise Lost</p>
                     <p>John Milton</p>
                   </div>
                 </div>
                 <div class="book__side-face"></div>
               </div>
               <div class="book__meta">
-                <h3>Paraíso Perdido</h3>
+                <h3>Paradise Lost</h3>
                 <p class="book__author">John Milton · 1667</p>
                 <p class="body-text">
                   La caída más bella de la literatura. Lucifer como el rebelde
                   eterno.
                 </p>
                 <div class="book__tags">
-                  <span class="tag">Épica</span
-                  ><span class="tag">Teología</span>
+                  <span class="tag">Epic</span
+                  ><span class="tag">Theology</span>
                 </div>
               </div>
               <template class="book-modal-template">
                 <section>
-                  <h3>Contexto</h3>
+                  <h3>Context</h3>
                   <p>
-                    Publicado originalmente en 1667, Paraíso Perdido es el gran poema
+                    Publicado originalmente en 1667, Paradise Lost es el gran poema
                     épico de John Milton. La obra recrea la caída de Adán y Eva y la
                     rebelión de Lucifer desde una perspectiva profundamente marcada
                     por la tradición cristiana y la cultura clásica.
                   </p>
                 </section>
                 <section>
-                  <h3>Argumento</h3>
+                  <h3>Plot</h3>
                   <p>
                     El poema narra la rebelión de Satanás contra Dios, su caída y su
                     posterior intento de vengarse corrompiendo a la humanidad. La
@@ -1083,14 +1074,14 @@
                   </p>
                 </section>
                 <section>
-                  <h3>Temas</h3>
+                  <h3>Themes</h3>
                   <p>
                     Rebelión · libertad · obediencia · caída · tentación · culpa ·
                     destino · naturaleza del mal
                   </p>
                 </section>
                 <section>
-                  <h3>Análisis</h3>
+                  <h3>Analysis</h3>
                   <p>
                     Milton convierte a Satanás en una figura de enorme fuerza
                     retórica, capaz de resultar simultáneamente fascinante y
@@ -1109,7 +1100,7 @@
                 class="book__3d"
                 style="--bk: #1a1200">
                 <div class="book__spine-face">
-                  <span>Meditaciones Metafísicas.</span><span>Anónimo</span>
+                  <span>Meditations on First Philosophy</span><span>Anónimo</span>
                 </div>
                 <div class="book__front-face">
                   <img
@@ -1117,26 +1108,26 @@
                     alt=""
                     class="book__cover-img"/>
                   <div class="book__cover-text">
-                    <p>Meditaciones Metafísicas.s</p>
+                    <p>Meditations on First Philosophys</p>
                     <p>René Descartes.</p>
                   </div>
                 </div>
                 <div class="book__side-face"></div>
               </div>
               <div class="book__meta">
-                <h3>Meditaciones Metafísicas.</h3>
+                <h3>Meditations on First Philosophy</h3>
                 <p class="book__author">René Descartes. 1641.</p>
                 <p class="body-text">
-                  Manual para encontrar una base totalmente segura y firme para todo el conocimiento humano.
+                  A guide to finding a completely secure and firm foundation for all human knowledge.
                 </p>
                 <div class="book__tags">
                   <span class="tag">Filosofía</span
-                  ><span class="tag">Epistemología.</span>
+                  ><span class="tag">Epistemology.</span>
                 </div>
               </div>
               <template class="book-modal-template">
                 <section>
-                  <h3>Contexto</h3>
+                  <h3>Context</h3>
                   <p>
                     Publicadas originalmente en 1641, las Meditaciones Metafísicas
                     de René Descartes buscan encontrar un fundamento absolutamente
@@ -1146,7 +1137,7 @@
                   </p>
                 </section>
                 <section>
-                  <h3>Argumento</h3>
+                  <h3>Plot</h3>
                   <p>
                     A través de una serie de meditaciones, Descartes lleva la duda
                     hasta sus últimas consecuencias y descubre una primera certeza:
@@ -1157,14 +1148,14 @@
                   </p>
                 </section>
                 <section>
-                  <h3>Temas</h3>
+                  <h3>Themes</h3>
                   <p>
                     Duda metódica · cogito · existencia de Dios · razón · mente y cuerpo ·
                     certeza · conocimiento
                   </p>
                 </section>
                 <section>
-                  <h3>Análisis</h3>
+                  <h3>Analysis</h3>
                   <p>
                     La obra representa uno de los momentos fundamentales de la filosofía
                     moderna. Descartes utiliza la duda no como una conclusión escéptica,
@@ -1185,7 +1176,7 @@
           class="book-modal__close"
           id="book-modal-close"
           type="button"
-          aria-label="Cerrar">
+          aria-label="Close">
           ×
         </button>
         <div class="book-modal__body">
@@ -1214,35 +1205,28 @@
     class="stat-modal__close"
     id="stat-modal-close"
     type="button"
-    aria-label="Cerrar">
+    aria-label="Close">
     ×
     </button>
     <div class="stat-modal__body"></div>
   </div>
 </div>
 
-      <!-- ══ LA CÁMARA — ENSAYO DESTACADO ══ -->
+      <!-- ══ THE CHAMBER — FEATURED ESSAY ══ -->
       <section
         class="camara"
         id="camara">
-        <div
-          class="section-bg"
-          aria-hidden="true">
-          <img
-            src="assets/sexta.png"
-            alt="" />
-          <div class="section-bg__mask section-bg__mask--camara"></div>
-        </div>
+        <div class="section-bg section-bg--gradient" aria-hidden="true"></div>
         <div class="container">
           <header class="section-header section-header--center">
-            <p class="eyebrow">III. La Cámara</p>
-            <h2>El Ensayo de la Semana</h2>
+            <p class="eyebrow">III. The Chamber</p>
+            <h2>The Essay of the Week</h2>
           </header>
           <article class="camara__essay">
             <div class="camara__essay-media">
               <img
                 src="assets/principal.png"
-                alt="Libro de alquimia — Great Chain of Being"
+                alt="Alchemical book — Great Chain of Being"
                 loading="lazy" />
               <div
                 class="camara__ribbon"
@@ -1250,21 +1234,21 @@
                 <img
                   src="assets/purple-ribbon-graphic-element-on-transparent-rectangle-label-png.png"
                   alt="" />
-                <span>Nuevo</span>
+                <span>New</span>
               </div>
             </div>
             <div class="camara__essay-body">
-              <p class="eyebrow">Filosofía · Esotérico</p>
+              <p class="eyebrow">Philosophy · Esoteric</p>
               <h3>
-                La Gran Cadena del Ser:<br />Jerarquía, Cosmos y el Lugar del
+                The Great Chain of Being:<br />Jerarquía, Cosmos y el Lugar del
                 Hombre
               </h3>
               <p class="camara__essay-meta">
-                <span>Por Nocturna Editorial</span
+                <span>By Nocturna Editorial</span
                 ><span aria-hidden="true"> · </span>
-                <time datetime="2026-04-07">7 de abril, 2026</time
+                <time datetime="2026-04-07">April 7, 2026</time
                 ><span aria-hidden="true"> · </span>
-                <span>12 min de lectura</span>
+                <span>12 min read</span>
               </p>
               <p class="body-text">
                 Desde Platón hasta Leibniz, la idea de que el universo forma una
@@ -1274,9 +1258,9 @@
                 apenas puede articular con palabras.
               </p>
               <a
-                href="#"
+                href="essay/essay.html"
                 class="btn btn--primary btn--arrow">
-                Leer el ensayo completo
+                Read the Full Essay
                 <svg
                   class="btn__arrow-svg"
                   viewBox="0 0 24 24"
@@ -1295,24 +1279,17 @@
         </div>
       </section>
 
-      <!-- ══ PREGUNTAS DEL ABISMO — ACORDEÓN ══ -->
+      <!-- ══ QUESTIONS FROM THE ABYSS — ACCORDION ══ -->
       <section
         class="faq"
         id="faq">
-        <div
-          class="section-bg"
-          aria-hidden="true">
-          <img
-            src="assets/SEGUNDO.png"
-            alt="" />
-          <div class="section-bg__mask section-bg__mask--manifiesto"></div>
-        </div>
+        <div class="section-bg section-bg--gradient" aria-hidden="true"></div>
         <div class="container">
           <div class="faq__layout">
             <div class="faq__intro">
               <header class="section-header">
-                <p class="eyebrow">IV. Las Preguntas</p>
-                <h2>Preguntas<br />del Abismo</h2>
+                <p class="eyebrow">IV. The Questions</p>
+                <h2>Questions<br />from the Abyss</h2>
               </header>
               <p class="body-text faq__intro-text">
                 Algunas preguntas no tienen respuesta. Otras tienen demasiadas.
@@ -1342,7 +1319,7 @@
                   id="faq-btn-1">
                   <span class="accordion-item__num">I</span>
                   <span class="accordion-item__question"
-                    >¿Qué es exactamente Nocturna?</span
+                    >What exactly is Nocturna?</span
                   >
                   <span
                     class="accordion-item__icon"
@@ -1427,7 +1404,7 @@
                       son igualmente bienvenidos en este umbral.
                     </p>
                     <blockquote class="faq__quote">
-                      "No hay ignorancia, solo distintos grados de asombro."
+                      "There is no ignorance, only different degrees of wonder."
                     </blockquote>
                   </div>
                 </div>
@@ -1443,7 +1420,7 @@
                   id="faq-btn-3">
                   <span class="accordion-item__num">III</span>
                   <span class="accordion-item__question"
-                    >¿Con qué frecuencia se publica nuevo contenido?</span
+                    >How often is new content published?</span
                   >
                   <span
                     class="accordion-item__icon"
@@ -1468,20 +1445,20 @@
                   hidden>
                   <div class="accordion-item__content">
                     <p>
-                      El Códice Nocturno llega cada semana a tu correo, sin
+                      The Nocturnal Codex llega cada semana a tu correo, sin
                       falta. Dentro encontrarás un ensayo largo, una obra de
                       arte comentada, una recomendación musical y, cuando el
                       momento lo merece, un texto más oscuro de lo habitual.
                     </p>
                     <p>
-                      En los Archivos (Galería, Música, Biblioteca) el contenido
+                      En los Archives (Galería, Música, Biblioteca) el contenido
                       se actualiza de forma irregular, cuando algo digno de
                       atención aparece en el horizonte.
                     </p>
                     <ul class="faq__list">
-                      <li><span>✦</span> Códice semanal — todos los lunes</li>
+                      <li><span>✦</span> Weekly Codex — every Monday</li>
                       <li>
-                        <span>✦</span> Obra de la semana — análisis profundo
+                        <span>✦</span> Artwork of the Week — análisis profundo
                         cada martes
                       </li>
                       <li>
@@ -1503,7 +1480,7 @@
                   id="faq-btn-4">
                   <span class="accordion-item__num">IV</span>
                   <span class="accordion-item__question"
-                    >¿Por qué se llama "El Culto del Pensamiento"?</span
+                    >Why is it called "The Cult of Thought"?</span
                   >
                   <span
                     class="accordion-item__icon"
@@ -1530,7 +1507,7 @@
                     <p>
                       La palabra <em>culto</em> tiene mala prensa, y eso nos
                       parece perfecto. Originalmente significaba simplemente
-                      <em>cuidado</em> y <em>reverencia</em>: cultivar algo con
+                      <em>care</em> y <em>reverence</em>: cultivar algo con
                       devoción.
                     </p>
                     <p>
@@ -1540,7 +1517,7 @@
                       horas, que relee el mismo párrafo cinco veces hasta que
                       algo se abre.
                     </p>
-                    <p>Eso es lo que cultivamos. Eso es el culto.</p>
+                    <p>That is what we cultivate. That is the cult.</p>
                   </div>
                 </div>
               </div>
@@ -1555,7 +1532,7 @@
                   id="faq-btn-5">
                   <span class="accordion-item__num">V</span>
                   <span class="accordion-item__question"
-                    >¿Puedo contribuir con contenido a Nocturna?</span
+                    >Can I contribute content to Nocturna?</span
                   >
                   <span
                     class="accordion-item__icon"
@@ -1580,7 +1557,7 @@
                   hidden>
                   <div class="accordion-item__content">
                     <p>
-                      La Cámara está abierta a voces externas, pero la selección
+                      The Chamber está abierta a voces externas, pero la selección
                       es estricta. No buscamos volumen. Buscamos precisión,
                       profundidad y ese raro instinto de saber cuándo una obra
                       merece ser contemplada en silencio.
@@ -1594,7 +1571,7 @@
                     <a
                       href="#newsletter"
                       class="btn btn--ghost-gold btn--sm faq__cta-btn"
-                      >Contactar al Códice →</a
+                      >Contact the Codex →</a
                     >
                   </div>
                 </div>
@@ -1608,17 +1585,7 @@
       <section
         class="newsletter"
         id="newsletter">
-        <div
-          class="section-bg"
-          aria-hidden="true">
-          <img
-            src="assets/quinta.png"
-            alt="" />
-          <div class="section-bg__mask section-bg__mask--newsletter"></div>
-          <div
-            class="newsletter-glow"
-            aria-hidden="true"></div>
-        </div>
+        <div class="section-bg section-bg--gradient" aria-hidden="true"></div>
         <div class="container">
           <div class="newsletter__inner">
             <div
@@ -1629,8 +1596,8 @@
                 alt="" />
             </div>
             <header class="section-header section-header--center">
-              <p class="eyebrow">El Códice Nocturno</p>
-              <h2>Únete al Culto del Pensamiento</h2>
+              <p class="eyebrow">The Nocturnal Codex</p>
+              <h2>Join the Cult of Thought</h2>
               <p class="section-sub">
                 Una carta semanal con las mejores obras, reflexiones filosóficas
                 y los secretos mejor guardados de la cultura oscura.
@@ -1644,23 +1611,23 @@
                 <label
                   for="nl-email"
                   class="sr-only"
-                  >Correo electrónico</label
+                  >Email address</label
                 >
                 <input
                   type="email"
                   id="nl-email"
                   class="nl-form__input"
-                  placeholder="tu@correo.com"
+                  placeholder="you@email.com"
                   autocomplete="email"
                   required />
                 <button
                   type="submit"
                   class="btn btn--primary">
-                  Suscribirse al Códice
+                  Subscribe to the Codex
                 </button>
               </div>
               <p class="nl-form__fine">
-                Sin spam. Sin algoritmos. Solo conocimiento.
+                No spam. No algorithms. Only knowledge.
               </p>
               <p
                 class="nl-form__msg"
@@ -1669,25 +1636,27 @@
                 role="status"></p>
             </form>
             <div class="nl-features">
-              <span><em>✦</em> Un ensayo semanal</span>
-              <span><em>✦</em> Obra de arte comentada</span>
-              <span><em>✦</em> Recomendación musical</span>
+              <span><em>✦</em> One weekly essay</span>
+              <span><em>✦</em> Commented artwork</span>
+              <span><em>✦</em> Music recommendation</span>
             </div>
           </div>
         </div>
+                <div
+                  class="hero__particles"
+                  aria-hidden="true">
+                  <span class="particle p1">✦</span>
+                  <span class="particle p2">✧</span>
+                  <span class="particle p3">✦</span>
+                  <span class="particle p4">✧</span>
+                  <span class="particle p5">✦</span>
+                </div
       </section>
     </main>
 
     <!-- ══ FOOTER ══ -->
     <footer class="site-footer">
-      <div
-        class="site-footer__bg"
-        aria-hidden="true">
-        <img
-          src="assets/footer.png"
-          alt="" />
-        <div class="site-footer__mask"></div>
-      </div>
+      <div class="site-footer__bg site-footer__bg--gradient" aria-hidden="true"></div>
       <div class="container">
         <div class="footer__main">
           <div class="footer__brand">
@@ -1706,24 +1675,24 @@
             class="footer__nav"
             aria-label="Footer nav">
             <div class="footer__nav-col">
-              <h3>Archivos</h3>
+              <h3>Archives</h3>
               <ul>
-                <li><a href="#galeria">La Galería</a></li>
-                <li><a href="#musica">La Música</a></li>
-                <li><a href="#biblioteca">La Biblioteca</a></li>
+                <li><a href="#galeria">The Gallery</a></li>
+                <li><a href="#musica">Music</a></li>
+                <li><a href="#biblioteca">The Library</a></li>
               </ul>
             </div>
             <div class="footer__nav-col">
               <h3>Nocturna</h3>
               <ul>
-                <li><a href="#manifiesto">Manifiesto</a></li>
-                <li><a href="#camara">La Cámara</a></li>
+                <li><a href="#manifiesto">Manifesto</a></li>
+                <li><a href="#camara">The Chamber</a></li>
                 <li><a href="#newsletter">El Códice</a></li>
               </ul>
             </div>
           </nav>
           <div class="footer__subscribe">
-            <h3>Suscripción al Códice</h3>
+            <h3>Subscribe to the Codex</h3>
             <form
               id="footer-form"
               novalidate>
@@ -1731,12 +1700,12 @@
                 <label
                   for="footer-email"
                   class="sr-only"
-                  >Email footer</label
+                  >Footer email</label
                 >
                 <input
                   type="email"
                   id="footer-email"
-                  placeholder="tu@correo.com"
+                  placeholder="you@email.com"
                   required />
                 <button
                   type="submit"
@@ -1753,7 +1722,7 @@
             aria-hidden="true"></div>
           <div class="footer__bottom-row">
             <p>
-              © MMXXV Nocturna — The Cult of Thought. Omnia vincit cogitatio.
+              © MMXXVII Nocturna — The Cult of Thought. Omnia vincit cogitatio.
             </p>
             <p class="footer__motto">✦ Per Aspera Ad Astra ✦</p>
           </div>
