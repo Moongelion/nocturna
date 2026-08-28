@@ -129,7 +129,7 @@ document.addEventListener('mousemove', (e) => {
         input.classList.add('invalid');
         input.focus();
         if (msgEl) {
-          msgEl.textContent = 'Introduce un correo válido.';
+          msgEl.textContent = 'Enter a valid email.';
           msgEl.className = 'nl-form__msg error';
         }
         return;
@@ -141,12 +141,12 @@ document.addEventListener('mousemove', (e) => {
       }
       if (msgEl) {
         msgEl.textContent =
-          'Revisa tu correo. Bienvenido al Culto del Pensamiento.';
+          'Check your email. Welcome to The Club Of Thought';
         msgEl.className = 'nl-form__msg success';
       }
       setTimeout(() => {
         if (btn) {
-          btn.textContent = 'Suscribirse al Códice';
+          btn.textContent = 'Subscribe to the Codex';
           btn.disabled = false;
         }
         input.value = '';
